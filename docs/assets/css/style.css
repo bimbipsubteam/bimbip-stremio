@@ -1,48 +1,64 @@
 :root {
   --header-height: 74px;
   --sidebar-width: clamp(310px, 24vw, 410px);
+
+  /* Deadpool & Wolverine Gradient Palette */
+  /* Màu nền là sự pha trộn giữa Đỏ Đậm, Đen và Vàng Hổ Phách */
+  --bg: linear-gradient(135deg, #2b0000 0%, #050505 50%, #2b2500 100%) fixed;
   
-  /* Palette Deadpool & Wolverine - Vapor Edition */
-  --bg: #0d0d0f;              /* Đen sâu */
-  --panel: #16161a;           /* Xám đen */
-  --panel-2: #1c1c22;
+  /* Các panel sẽ hơi trong suốt để nhìn thấy gradient bên dưới (Glassmorphism) */
+  --panel: rgba(20, 20, 25, 0.9); 
+  --panel-2: rgba(30, 30, 35, 0.9);
+  
   --text: #ffffff;
   --muted: #a0a0a5;
   
-  --accent: #E23636;          /* Đỏ Deadpool */
+  --accent: #8B0000;          /* Đỏ Deadpool */
   --accent-2: #FFD700;        /* Vàng Wolverine */
   
-  --border: #2d2d35;
-  --shadow: 0 0 20px rgba(226, 54, 54, 0.15); /* Glow đỏ nhẹ */
+  --border: rgba(255, 215, 0, 0.2); /* Đổi sang viền vàng nhẹ */
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   --radius: 14px;
   
-  --pill-bg: rgba(226, 54, 54, 0.15);
-  --pill-text: #FFD700;       /* Chữ vàng trên nền đỏ */
+  --pill-bg: rgba(255, 0, 0, 0.1);
+  --pill-text: #FFD700;
   
-  --quote-bg: rgba(226, 54, 54, 0.05);
-  --quote-border: #E23636;
+  --quote-bg: rgba(226, 54, 54, 0.1);
+  --quote-border: #D42210;
   --quote-text: #f0f0f0;
 }
 
-/* Ép chế độ tối luôn rực rỡ */
+/* Ép chế độ tối sử dụng gradient sâu hơn */
 html[data-theme="dark"] {
-  --bg: #050505;
-  --panel: #0f0f12;
-  --panel-2: #1a1a1f;
-  --border: #331a1a;          /* Border đỏ tối */
-  --accent: #E23636;
-  --accent-2: #FFD700;
-  --shadow: 0 0 25px rgba(226, 54, 54, 0.25);
+  --bg: linear-gradient(135deg, #2b0000 0%, #050505 50%, #2b2500 100%) fixed;
+  --panel: rgba(10, 10, 12, 0.9);
+  --border: rgba(226, 54, 54, 0.3); /* Viền đỏ trong suốt */
 }
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 
 body {
-  background: var(--bg);
+  background: var(--bg) !important;
+  background-attachment: fixed !important;
   color: var(--text);
   font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
   line-height: 1.65;
+}
+
+/* Hiệu ứng kính mờ (Glassmorphism) cho các thành phần chính */
+.topbar, .sidebar, .doc-card, .quick-nav, .pager a {
+  backdrop-filter: blur(4px); /* Làm mờ nền phía sau */
+  -webkit-backdrop-filter: blur(4px);
+  background-color: var(--panel) !important;
+  border: 2px solid var(--border) !important;
+}
+
+/* Hiệu ứng phát sáng cho viền Card khi di chuột vào */
+.doc-card:hover {
+  border-color: var(--accent-2) !important; /* Đổi sang viền vàng Wolverine */
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+  transition: all 0.4s ease;
 }
 
 .topbar {
@@ -65,7 +81,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
-  color: inherit;
+  color: #FFBF00;
   flex: 1 1 auto;
   min-width: 0;
 }
@@ -94,7 +110,7 @@ body {
 .topbar-subtitle {
   margin-top: 0.08rem;
   font-size: 0.83rem;
-  color: var(--muted);
+  color: #D42210;
   line-height: 1.15;
 }
 
@@ -415,12 +431,19 @@ pre {
   }
 }
 
-/* Hiệu ứng Tiêu đề phát sáng kiểu Deadpool */
 h1, h2, h3 {
-  color: #fff !important;
+  color: #FFBF00 !important;
   text-shadow: 2px 2px 0px var(--accent), 0 0 15px rgba(226, 54, 54, 0.5);
   text-transform: uppercase;
   font-weight: 800 !important;
+}
+
+/* Tiêu đề rực rỡ trên nền tối */
+h2 {
+  color: var(--accent-2) !important; /* Wolverine Yellow */
+  border-top: 1px solid var(--accent) !important; /* Deadpool Red line */
+  padding-top: 1rem;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
 }
 
 /* Thanh Topbar - Border Đỏ Deadpool rực rỡ */
