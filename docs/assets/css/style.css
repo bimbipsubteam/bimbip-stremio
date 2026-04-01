@@ -498,3 +498,70 @@ a:hover {
   background: linear-gradient(var(--accent), var(--accent-2)); 
   border-radius: 10px;
 }
+
+/* --- Cập nhật Topbar Layout --- */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0 1rem;
+}
+
+.topbar-left, .topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa các phần tử */
+}
+
+/* Ép Nút Hamburger LUÔN HIỂN THỊ trên cả máy tính */
+.nav-toggle-always {
+  display: flex !important; 
+}
+
+/* --- Tùy chỉnh Ô Search --- */
+.topbar-search input {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: var(--bg-color, #fff);
+  color: var(--text-color, #333);
+  outline: none;
+  width: 150px;
+  transition: width 0.3s;
+}
+.topbar-search input:focus {
+  width: 200px;
+  border-color: #007bff;
+}
+
+/* --- Tùy chỉnh Social & Ko-fi --- */
+.social-btn {
+  color: var(--text-color, #333);
+  display: flex;
+  align-items: center;
+  transition: opacity 0.2s;
+}
+.social-btn:hover {
+  opacity: 0.7;
+}
+
+.topbar-kofi img {
+  height: 32px; /* Chỉnh độ cao ảnh kofi cho vừa vặn với topbar */
+  width: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* --- Responsive (Cho màn hình điện thoại) --- */
+@media (max-width: 768px) {
+  /* Ẩn bớt chữ của tên website trên điện thoại cho đỡ chật */
+  .topbar-subtitle { display: none; }
+  
+  /* Ô search thu nhỏ hoặc biến mất trên mobile tùy bạn, ở đây tôi cho nó nhỏ lại */
+  .topbar-search input { width: 100px; }
+  .topbar-search input:focus { width: 120px; }
+  
+  /* Giảm khoảng cách */
+  .topbar-left, .topbar-right { gap: 8px; }
+}
