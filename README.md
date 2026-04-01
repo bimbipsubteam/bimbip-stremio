@@ -1,4 +1,4 @@
-# 🎬 STREMIO FULL & EASY TOTAL BEGINNER'S GUIDE
+# 🎬 HƯỚNG DẪN CÀI ĐẶT STREMIO DỄ NHƯ ĂN KẸO 🍬
 **[⚡ DEBRID / 🧲 P2P / 🌐 HTTP]** (*v2.0*)
 
 ![Homescreen (left) & Stream source selection (right)](docs/images/home.jpg)
