@@ -1,9 +1,7 @@
-name: Deploy Website
-
+name: Deploy MkDocs-Material
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 permissions:
   contents: write
@@ -11,34 +9,19 @@ permissions:
   id-token: write
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-
-      - name: Install MkDocs
-        run: pip install mkdocs-material
-
-      - name: Build Site
-        run: mkdocs build
-
-      - name: Upload Artifact
+          python-version: 3.x
+      - run: pip install mkdocs-material
+      - run: mkdocs build
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site  # MkDocs build ra thư mục 'site'
-
-  deploy:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+          path: site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
