@@ -1,0 +1,6 @@
+site_name: BimBip Stremio
+theme:
+  name: material  # Giao diện cực đẹp và phổ biến hiện nay
+
+nav:
+  - Trang chủ: index.md
