@@ -1,6 +1,41 @@
-site_name: BimBip Stremio
-theme:
-  name: material  # Giao diện cực đẹp và phổ biến hiện nay
+site_name: BIMBIP STREMIO  # Thay bằng tên của bạn
+site_url: https://bimbipsubteam.github.io/bimbip-stremio/
 
+theme:
+  name: material
+  language: vi  # Hỗ trợ tiếng Việt
+  palette:
+    # Cấu hình chuyển đổi giao diện Sáng/Tối
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Chuyển sang chế độ tối
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: lime
+      toggle:
+        icon: material/brightness-4
+        name: Chuyển sang chế độ sáng
+  features:
+    - navigation.tabs        # Menu nằm ngang ở trên
+    - navigation.sections    # Menu bên trái phân cấp rõ ràng
+    - navigation.top         # Nút cuộn lên đầu trang
+    - search.suggest         # Gợi ý khi tìm kiếm
+    - content.code.copy      # Nút copy code nhanh
+
+markdown_extensions:
+  - admonition               # Tạo các hộp ghi chú (Note, Warning) đẹp
+  - pymdownx.details         # Tạo mục xổ xuống (Dropdown)
+  - pymdownx.highlight:      # Tô màu code
+      anchor_linenums: true
+  - pymdownx.superfences
+
+# Cấu hình menu bên trái
 nav:
   - Trang chủ: index.md
+  - Hướng dẫn 1: folder-abc/bai-1.md
+  - Hướng dẫn 2: folder-abc/bai-2.md
