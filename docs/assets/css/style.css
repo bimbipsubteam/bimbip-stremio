@@ -1,38 +1,38 @@
 :root {
   --header-height: 74px;
   --sidebar-width: clamp(310px, 24vw, 410px);
-  --bg: #f4f0ff;
-  --panel: #ffffff;
-  --panel-2: #f1ebff;
-  --text: #22183f;
-  --muted: #5e5487;
-  --accent: #6d3af2;
-  --accent-2: #8f68ff;
-  --border: #dbd1f4;
-  --shadow: 0 10px 24px rgba(57, 35, 116, 0.1);
+  
+  /* Palette Deadpool & Wolverine - Vapor Edition */
+  --bg: #0d0d0f;              /* Đen sâu */
+  --panel: #16161a;           /* Xám đen */
+  --panel-2: #1c1c22;
+  --text: #ffffff;
+  --muted: #a0a0a5;
+  
+  --accent: #E23636;          /* Đỏ Deadpool */
+  --accent-2: #FFD700;        /* Vàng Wolverine */
+  
+  --border: #2d2d35;
+  --shadow: 0 0 20px rgba(226, 54, 54, 0.15); /* Glow đỏ nhẹ */
   --radius: 14px;
-  --pill-bg: rgba(109, 58, 242, 0.12);
-  --pill-text: #4f4a8f;
-  --quote-bg: color-mix(in srgb, var(--accent) 7%, white 93%);
-  --quote-border: color-mix(in srgb, var(--accent) 34%, var(--border) 66%);
-  --quote-text: color-mix(in srgb, var(--text) 88%, var(--accent) 12%);
+  
+  --pill-bg: rgba(226, 54, 54, 0.15);
+  --pill-text: #FFD700;       /* Chữ vàng trên nền đỏ */
+  
+  --quote-bg: rgba(226, 54, 54, 0.05);
+  --quote-border: #E23636;
+  --quote-text: #f0f0f0;
 }
 
+/* Ép chế độ tối luôn rực rỡ */
 html[data-theme="dark"] {
-  --bg: #171127;
-  --panel: #211738;
-  --panel-2: #2a1f45;
-  --text: #f3eefe;
-  --muted: #c3b6ec;
-  --accent: #9c7dff;
-  --accent-2: #b49dff;
-  --border: #3a2d5b;
-  --shadow: 0 12px 28px rgba(0, 0, 0, 0.38);
-  --pill-bg: rgba(180, 157, 255, 0.16);
-  --pill-text: #efe9ff;
-  --quote-bg: color-mix(in srgb, var(--accent) 12%, var(--panel) 88%);
-  --quote-border: color-mix(in srgb, var(--accent) 42%, var(--border) 58%);
-  --quote-text: color-mix(in srgb, var(--text) 92%, var(--accent) 8%);
+  --bg: #050505;
+  --panel: #0f0f12;
+  --panel-2: #1a1a1f;
+  --border: #331a1a;          /* Border đỏ tối */
+  --accent: #E23636;
+  --accent-2: #FFD700;
+  --shadow: 0 0 25px rgba(226, 54, 54, 0.25);
 }
 
 * { box-sizing: border-box; }
@@ -413,4 +413,64 @@ pre {
     padding: 1rem 0.85rem;
     border-radius: 12px;
   }
+}
+
+/* Hiệu ứng Tiêu đề phát sáng kiểu Deadpool */
+h1, h2, h3 {
+  color: #fff !important;
+  text-shadow: 2px 2px 0px var(--accent), 0 0 15px rgba(226, 54, 54, 0.5);
+  text-transform: uppercase;
+  font-weight: 800 !important;
+}
+
+/* Thanh Topbar - Border Đỏ Deadpool rực rỡ */
+.topbar {
+  border-bottom: 2px solid var(--accent) !important;
+  box-shadow: 0 4px 20px rgba(226, 54, 54, 0.3);
+}
+
+/* Thanh Sidebar - Border Vàng Wolverine xẻ dọc */
+.sidebar {
+  border-right: 2px solid var(--accent-2) !important;
+  box-shadow: 5px 0 20px rgba(255, 215, 0, 0.1);
+}
+
+/* Biến các link thành màu vàng rực rỡ của Wolverine */
+a {
+  color: var(--accent-2);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px var(--accent-2);
+}
+
+/* Biến các nút Icon thành màu Đỏ/Vàng */
+.icon-btn {
+  border-color: var(--accent-2) !important;
+  color: var(--accent-2) !important;
+}
+
+.icon-btn:hover {
+  background: var(--accent) !important;
+  color: #fff !important;
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 15px var(--accent);
+}
+
+/* Thanh điều hướng đang chọn (Active) */
+.nav-link[aria-current="page"] {
+  background: var(--accent) !important; /* Nền đỏ */
+  color: #fff !important;               /* Chữ trắng */
+  border-color: var(--accent-2) !important; /* Viền vàng */
+  box-shadow: 0 0 10px rgba(226, 54, 54, 0.5);
+}
+
+/* Tùy chỉnh thanh cuộn (Scrollbar) cho chất Vapor */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { 
+  background: linear-gradient(var(--accent), var(--accent-2)); 
+  border-radius: 10px;
 }
