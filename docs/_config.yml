@@ -1,5 +1,21 @@
 title: BimBip Stremio
 description: Hướng Dẫn Xem Phim Với Stremio
+
+# Đây là dòng quan trọng nhất để làm web đẹp
+remote_theme: just-the-docs/just-the-docs
+
+# Cấu hình màu sắc và bố cục
+color_scheme: dark # Hoặc light nếu muốn nền trắng
+nav_external_links:
+  - title: MCUDISVN
+    url: https://discord.gg/mcudisvn
+
+# Cấu hình tìm kiếm
+search_enabled: true
+search:
+  tokenizer_separator: /[\s\-/]+/
+  rel_url: true
+  
 markdown: kramdown
 kramdown:
   input: GFM
