@@ -521,7 +521,7 @@ a:hover {
 /* 5. Hỗ trợ cho trình duyệt Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--accent) #050505;
+  scrollbar-color: linear-gradient(to bottom, var(--accent-2), var(--accent)) !important #050505;
 }
 
 /* =========================================
