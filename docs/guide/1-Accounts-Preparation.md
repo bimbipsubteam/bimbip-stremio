@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: "📝 1. Accounts Preparation"
+title: "📝 1. Khế Ước Thiêng Liêng"
 ---
 
 # 📝 1. Khế Ước Thiêng Liêng
