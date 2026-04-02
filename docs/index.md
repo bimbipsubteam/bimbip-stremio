@@ -35,6 +35,6 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [🤖 6. Thực Thể Giả Kim](guide/6-Personalized-Lists.md)
 - [🧿 Điện Thờ Hiền Triết](guide/7-Additional-Stuff.md)
 - [❓ Ngọn Đồi Toàn Tri](guide/8-Configuration-QA.md)
-- [🎛️ AIOManager [Power Users]](guide/AIOManager-Setup.md)
+- [📄 Cổ Vật Quyền Năng](guide/AIOManager-Setup.md)
 - [📜 Changelog](guide/Changelog.md)
 - [🔔 Updates](guide/Updates.md)
