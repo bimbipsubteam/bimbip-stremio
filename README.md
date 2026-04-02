@@ -27,7 +27,7 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [🗝️ 3. Chìa Khóa Tinh Vân](docs/guide/3-MCUDISVN-Setup.md)
 - [🔎 4. Quả Cầu Thấu Thị](docs/guide/4-AIOMetadata-Setup.md)
 - [💎 5. Thần Chú Sung Túc](docs/guide/5-MCUDISVN-Using.md)
-- [🤖 6. Personalized & Automated Lists](docs/guide/6-Personalized-Lists.md)
+- [🤖 6. Thực Thể Giả Kim](docs/guide/6-Personalized-Lists.md)
 - [🛠️ Additional Stuff](docs/guide/7-Additional-Stuff.md)
 - [❓ Configuration Q&A](docs/guide/8-Configuration-QA.md)
 - [🎛️ AIOManager [Power Users]](docs/guide/AIOManager-Setup.md)
