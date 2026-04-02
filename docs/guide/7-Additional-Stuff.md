@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "🛠️ Additional Stuff"
+title: "🧿 Điện Thờ Hiền Triết"
 ---
 
-# 🛠️ Additional Stuff
+# 🧿 Điện Thờ Hiền Triết
 
 Most of the tips to address some issues are already included between the steps of the guide, but I am adding this section for any additional tweaks, explanations, or alternative configurations:
 
