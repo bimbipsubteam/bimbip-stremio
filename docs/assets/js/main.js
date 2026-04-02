@@ -121,7 +121,7 @@
     var home = document.createElement("a");
     home.className = "nav-link";
     home.href = window.HOME_URL || "/";
-    home.textContent = "🎬 Home";
+    home.textContent = "🎬 Găng Tay Điện Ảnh";
 
     if (normalizePath(currentPath) === "index.md" || normalizePath(currentPath) === "") {
       home.setAttribute("aria-current", "page");
