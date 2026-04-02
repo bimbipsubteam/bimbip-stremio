@@ -26,7 +26,7 @@ Nếu bạn đang phân vân liệu nó có xứng đáng với thời gian bỏ
 
 Sẵn sàng chưa? Úm ba la xì bùa!
 
-- [🔰 Beginner Concepts](guide/0-Beginner-Concepts.md)
+- [🔰 Bí Thư Khởi Nguyên](guide/0-Beginner-Concepts.md)
 - [📝 1. Accounts Preparation](guide/1-Accounts-Preparation.md)
 - [⚙️ 2. Stremio Account Initialization](guide/2-Stremio-Initialization.md)
 - [📚 3. AIOStreams [Find Streams]](guide/3-AIOStreams-Setup.md)
