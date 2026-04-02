@@ -491,11 +491,37 @@ a:hover {
   box-shadow: 0 0 10px rgba(226, 54, 54, 0.5);
 }
 
-/* Tùy chỉnh thanh cuộn (Scrollbar) cho chất Vapor */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-thumb { 
+/* 1. Toàn bộ khu vực thanh cuộn Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;               /* Độ rộng thanh cuộn */
+  background-color: #050505; /* Màu nền của đường ray - Đen để tiệp với nền web */
+}
+
+/* 2. Đường ray (phần chạy phía dưới) */
+::-webkit-scrollbar-track {
+  background-color: #050505 !important; 
+  border-left: 1px solid rgba(226, 54, 54, 0.2); /* Viền đỏ cực mờ để phân ranh giới */
+}
+
+/* 3. Cục kéo (phần di chuyển) */
+::-webkit-scrollbar-thumb {
+  /* Gradient Đỏ -> Vàng rực rỡ */
   background: linear-gradient(to bottom, var(--accent), var(--accent-2)) !important;
   border-radius: 10px;
+  /* Tạo một khoảng đệm nhỏ giữa cục kéo và viền để trông tinh tế hơn */
+  border: 2px solid #050505; 
+}
+
+/* 4. Hiệu ứng khi di chuột vào cục kéo */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--accent-2), var(--accent)) !important;
+  box-shadow: 0 0 10px var(--accent-2);
+}
+
+/* 5. Hỗ trợ cho trình duyệt Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) #050505;
 }
 
 /* =========================================
