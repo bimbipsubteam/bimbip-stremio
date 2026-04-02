@@ -518,12 +518,6 @@ a:hover {
   box-shadow: 0 0 10px var(--accent-2);
 }
 
-/* 5. Hỗ trợ cho trình duyệt Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: linear-gradient(to bottom, var(--accent-2), var(--accent)) !important #050505;
-}
-
 /* =========================================
    CẬP NHẬT TOPBAR & FIX LỖI GIAO DIỆN MỚI
    ========================================= */
