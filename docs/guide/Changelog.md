@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "📜 Changelog"
+title: "📜 Quái Thư Hắc Ám"
 ---
 
-# Changelog
+# 📜 Quái Thư Hắc Ám
 
 ## 2.0.0 (2026-03-31)
 
