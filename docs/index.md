@@ -1,46 +1,40 @@
 ---
 layout: default
-title: Home
+title: Găng Tay Điện Ảnh
 ---
 
-# 🎬 STREMIO FULL & EASY TOTAL BEGINNER'S GUIDE
-**[⚡ DEBRID / 🧲 P2P / 🌐 HTTP]** (*v2.0*)
+# 🎬 CẨM NANG NẮM GIỮ THỰC TẠI ĐIỆN ẢNH 🎬
+## **[❤️ From BimBip & luckynumb3rs with love ❤️]** 
 
 ![Homescreen (left) & Stream source selection (right)](images/home.jpg)
 
-After a few iterations trying out what works and what doesn't for me, and testing various addons, I think I have reached the optimal Stremio setup. Of course it's a matter of taste and everyone has different preferences, but I will share my guide here for anyone interested, or at least get started easily and then modify in reverse whatever changes they want. So here it is completely from scratch:
+Sau nhiều lần thử nghiệm cũng như kiểm tra các Addon khác nhau, thằng bạn mình đã đạt được thiết lập Stremio tối ưu, bạn có thể xem [ở đây](https://luckynumb3rs.github.io/stremio-perfect-setup/). Mặc dù trông có vẻ là một hướng dẫn rất dài, nhưng thực ra nó rất dễ thực hiện vì được trình bày kỹ lưỡng và mô tả mọi thứ chi tiết từng bước một. Khi đọc qua một lượt, bạn sẽ thấy những cài đặt này tùy thuộc vào sở thích và mỗi người có những ưu tiên khác nhau, cần dùng hoặc không.
 
-**Don't be scared. Although it may look like a very long guide, it's actually just a few simple steps and very easy. I just wanted to be thorough and describe everything totally step-by-step so you understand what you're doing.**
+Nhằm giúp mọi người làm quen với Stremio thật nhanh và sử dụng được ngay Addon MCUDISVN, Chef Bìm Bịp đã chọn lọc thông tin và chế tạo ra **Cine-Gauntlet - Găng Tay Điện Ảnh.** Đây là công cụ giúp bạn nắm giữ 6 "viên đá" cần thiết để làm chủ thực tại điện ảnh Stremio. Hãy bắt đầu với những hướng dẫn dễ dàng và dễ hiểu nhất rồi sau đó tự điều chỉnh bất kỳ thay đổi nào bạn muốn. 😊
 
-**If this guide helps you, please upvote the [Reddit post](https://www.reddit.com/r/StremioAddons/comments/1qvn9rk/my_stremio_perfect_setup_for_me_at_least_sharing/) so it remains relevant for others to find it and also benefit from it.** 😊
+>**LƯU Ý:**
+>* Nếu bạn **vừa mới biết đến Stremio** và tò mò muốn **hiểu rõ các khái niệm liên quan đến Stremio và cách nó hoạt động,** hãy truy cập [**🔰 Bí Thư Khởi Nguyên**](guide/0-Beginner-Concepts.md).
+>* Nếu bạn muốn theo dõi các cập nhật mới nhất, hãy bước đến [**🔔 Văn Khố Vĩnh Hằng**](guide/Updates.md).
+>* **Nếu bạn làm theo cẩm nang và gặp sự cố hoặc có câu hỏi**, hãy đi tới [**❓ Ngọn Đồi Toàn Tri**](guide/8-Configuration-QA.md).
+>* **🙏 Một lời CẢM ƠN đặc biệt và chân thành đến các nhà phát triển Stremio, anh bạn luckynumb3rs và tất cả những người trong cộng đồng**
 
->**NOTES:**
->* **If you are a total beginner and are curious to understand the concepts around Stremio** and how it works, go to [**🔰 Beginner Concepts**](guide/0-Beginner-Concepts.md).
->* If you already followed this guide and would like to **update to the latest template** (check out the version number on the title), go to [**🔔 Updates**](guide/Updates.md).
->* **If you followed this guide and are encountering issues or have configuration questions**, go to [**❓ Configuration Q&A**](guide/8-Configuration-QA.md). If you're just starting, remember this for later in case you need it. **PLEASE avoid asking questions that are already answered there**.
->* **🙏 A very explicit special THANKS** to the **Stremio** developers which goes without saying, and all the community collaborators without which we wouldn't be able to enjoy any of it: [**TamTaro**](https://ko-fi.com/tamtaro) for the template base and SEL filters, [**Vidhin**](https://ko-fi.com/vidhin) for the Regexes, and the addon developers [**Viren**](https://ko-fi.com/Viren070) for AIOStreams, [**Cedya**](https://buymeacoffee.com/cedya) for AIOMetadata, [**Sanopandit**](https://ko-fi.com/timilsinabimal) for Watchly, [**Sonic**](https://ko-fi.com/sonicx161) for AIOManager, the public addon instance hosters which make everything so much simpler for most, and anyone else I may have failed to mention. All of these people continue to develop and improve them actively together with the Stremio community, so shout out to all of them for their wonderful work, and consider buying them a coffee if you agree with me! Since a few of you have also asked about tipping me for helping, even though I did it for fun and an very happy if my guide helped you, [**here**](https://ko-fi.com/luckynumb3rs) is my coffee link :)
+Nếu bạn đang phân vân liệu nó có xứng đáng với thời gian bỏ ra và có thể thay thế các phương pháp giải trí hiện tại hay không thì đây là một chút tóm tắt:
 
-In case you are wondering whether it's worth the effort, or you already have a Torrentio + RD setup and want to know what's better if you use this guide, here's a summary:
+* **Giao Diện Tối Giản**: Không phải đẹp nhất và *chưa* cho phép chỉnh sửa nhưng đủ đơn giản để sử dụng.
+* **Tất Cả Trong Một**: Khả năng tích hợp và tùy biến cao giúp "vạn pháp quy tông", đưa mọi nguồn giải trí về một nơi. Bạn không cần phải mất công ghi nhớ xem gì, ở đâu nữa.
+* **MCUDISVN**: Lý do đầu tiên và quan trọng nhất khiến bạn mở ra cuốn cẩm nang này.
 
-* **Cleaner Management**: instead of one scraper and a messy pile of addons, you use *two central addons* (AIOStreams + AIOMetadata) to keep everything *clean, consistent, and easy to manage*.
-* **Better Results**: AIOStreams combines *multiple scrapers/providers*, so you usually get *more working sources* and better coverage.
-* **Best Links First**: smart *sorting + filtering* pushes the most relevant options to the top (cache, quality, resolution, size, reliability signals), so less scrolling and fewer bad clicks.
-* **Extra Quality Signals**: on top of general sorting, *Vidhin's regexes* help *rate/identify quality releases and trusted groups* for even better ordering.
-* **Cleaner Source Selection UI**: a *minimal, modern stream list view* with the info you actually need to choose fast.
-* **Netflix-like Automation**: Trakt-driven *personal lists, watch tracking, and progress syncing* and a *full-blown suggestions engine with dynamic catalogs* based on what you watch and like, for a more "recommended and organized" experience.
-* **Richer Browsing**: AIOMetadata gives *better catalogs + metadata integrations* (ratings, descriptions, artwork) and lets you *remove/replace Cinemeta clutter*.
+Sẵn sàng chưa? Úm ba la xì bùa!
 
-So, now that you know, it's up to you, but if you're up for it, let's do it:
-
-- [🔰 Beginner Concepts](guide/0-Beginner-Concepts.md)
-- [📝 1. Accounts Preparation](guide/1-Accounts-Preparation.md)
-- [⚙️ 2. Stremio Account Initialization](guide/2-Stremio-Initialization.md)
-- [📚 3. AIOStreams [Find Streams]](guide/3-AIOStreams-Setup.md)
-- [🔎 4. AIOMetadata [Metadata & Catalogs]](guide/4-AIOMetadata-Setup.md)
-- [🧹 5. Cinebye [Clean-Up]](guide/5-Cinebye-Cleanup.md)
-- [🤖 6. Personalized & Automated Lists](guide/6-Personalized-Lists.md)
-- [🛠️ Additional Stuff](guide/7-Additional-Stuff.md)
-- [❓ Configuration Q&A](guide/8-Configuration-QA.md)
-- [🎛️ AIOManager [Power Users]](guide/AIOManager-Setup.md)
-- [📜 Changelog](guide/Changelog.md)
-- [🔔 Updates](guide/Updates.md)
+- [🔰 Bí Thư Khởi Nguyên](guide/0-Beginner-Concepts.md)
+- [📝 1. Khế Ước Thiêng Liêng](guide/1-Accounts-Preparation.md)
+- [⚙️ 2. Cấm Vật Tiền Nhân](guide/2-Stremio-Initialization.md)
+- [🗝️ 3. Chìa Khóa Tinh Vân](guide/3-AIOStreams-Setup.md)
+- [🔎 4. Quả Cầu Thấu Thị](guide/4-AIOMetadata-Setup.md)
+- [💎 5. Thần Chú Sung Túc](guide/5-Cinebye-Cleanup.md)
+- [🤖 6. Thực Thể Giả Kim](guide/6-Personalized-Lists.md)
+- [🧿 Điện Thờ Hiền Triết](guide/7-Additional-Stuff.md)
+- [❓ Ngọn Đồi Toàn Tri](guide/8-Configuration-QA.md)
+- [🎛️ Cổ Vật Quyền Năng](guide/AIOManager-Setup.md)
+- [📜 Ma Điển Bí Truyền](guide/Changelog.md)
+- [🔔 Văn Khố Vĩnh Hằng](guide/Updates.md)
