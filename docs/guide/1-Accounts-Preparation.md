@@ -3,7 +3,7 @@ layout: guide
 title: "📝 1. Accounts Preparation"
 ---
 
-# 📝 1. Accounts Preparation
+# 📝 1. Khế Ước Thiêng Liêng
 
 First, let's start by creating the accounts (those who already have them can skip these steps):
 
