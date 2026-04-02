@@ -25,7 +25,7 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [📝 1. Khế Ước Thiêng Liêng](docs/guide/1-Accounts-Preparation.md)
 - [⚙️ 2. Cấm Vật Tiền Nhân](docs/guide/2-Stremio-Initialization.md)
 - [🗝️ 3. Chìa Khóa Tinh Vân](docs/guide/3-MCUDISVN-Setup.md)
-- [🔎 4. AIOMetadata [Metadata & Catalogs]](docs/guide/4-AIOMetadata-Setup.md)
+- [🔎 4. Quả Cầu Thấu Thị](docs/guide/4-AIOMetadata-Setup.md)
 - [🧹 5. Cinebye [Clean-Up]](docs/guide/5-Cinebye-Cleanup.md)
 - [🤖 6. Personalized & Automated Lists](docs/guide/6-Personalized-Lists.md)
 - [🛠️ Additional Stuff](docs/guide/7-Additional-Stuff.md)
