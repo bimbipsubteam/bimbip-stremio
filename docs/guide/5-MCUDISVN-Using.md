@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "🧹 5. Cinebye [Clean-Up]"
+title: "💎 5. Thần Chú Sung Túc"
 ---
 
-# 🧹 5. Cinebye [Clean-Up]
+# 💎 5. Thần Chú Sung Túc
 
 Cinebye is the addon order and patch management layer for Stremio. It lets you apply cleanup patches and control addon priority so AIOMetadata and AIOStreams are used in the right order.
 
