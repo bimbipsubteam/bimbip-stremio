@@ -658,3 +658,89 @@ body.nav-open .layout {
   /* Trên màn hình siêu nhỏ gọn chữ lại, ẩn nút kofi nếu quá chật */
   .topbar-search { display: none; } /* Có thể bỏ dòng này nếu muốn giữ ô search trên mobile */
 }
+
+/* =========================================
+   GIAO DIỆN KHUNG KẾT QUẢ TÌM KIẾM (DROPDOWN)
+   ========================================= */
+.topbar-search {
+  position: relative; /* Bắt buộc để canh vị trí dropdown */
+}
+
+.search-dropdown {
+  position: absolute;
+  top: calc(100% + 10px); /* Cách ô search một chút */
+  right: 0; /* Căn lề phải để không bị tràn màn hình */
+  width: 300px;
+  background: var(--panel);
+  border: 2px solid var(--accent-2); /* Viền vàng Wolverine */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(10px);
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 0.5rem;
+}
+
+/* Các link kết quả tìm kiếm */
+.search-dropdown a {
+  display: block;
+  padding: 0.6rem 0.8rem;
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  margin-bottom: 4px;
+}
+
+/* Khi di chuột vào kết quả */
+.search-dropdown a:hover {
+  background: var(--accent); /* Đổi sang nền Đỏ Deadpool */
+  color: #fff;
+  border-color: var(--border);
+  box-shadow: 0 0 10px rgba(226, 54, 54, 0.4);
+  transform: translateX(4px); /* Hơi thụt lề nhẹ */
+}
+
+/* Chữ hiển thị khi không tìm thấy kết quả */
+.search-no-results {
+  padding: 1rem 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Chỉnh Scrollbar cho dropdown đẹp hơn */
+.search-dropdown::-webkit-scrollbar { width: 6px; }
+.search-dropdown::-webkit-scrollbar-track { background: transparent; }
+.search-dropdown::-webkit-scrollbar-thumb { background: var(--accent-2); border-radius: 10px; }
+
+/* CSS cho tiêu đề và đoạn trích trong kết quả tìm kiếm */
+.search-dropdown a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.search-title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.search-dropdown a:hover .search-title {
+  color: #fff;
+}
+
+.search-snippet {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6); /* Màu chữ xám nhạt */
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Chỉ cho phép hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical;
+}
