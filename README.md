@@ -31,5 +31,5 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [🧿 Điện Thờ Hiền Triết](docs/guide/7-Additional-Stuff.md)
 - [❓ Ngọn Đồi Toàn Tri](docs/guide/8-Configuration-QA.md)
 - [🎛️ Cổ Vật Quyền Năng](docs/guide/AIOManager-Setup.md)
-- [📜 Changelog](docs/guide/Changelog.md)
+- [📜 Quái Thư Hắc Ám](docs/guide/Changelog.md)
 - [🔔 Updates](docs/guide/Updates.md)
