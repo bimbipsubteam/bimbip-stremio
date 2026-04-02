@@ -493,9 +493,8 @@ a:hover {
 
 /* Tùy chỉnh thanh cuộn (Scrollbar) cho chất Vapor */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { 
-  background: linear-gradient(var(--accent), var(--accent-2)); 
+  background: linear-gradient(to bottom, var(--accent), var(--accent-2)) !important;
   border-radius: 10px;
 }
 
