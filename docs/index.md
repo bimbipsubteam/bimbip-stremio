@@ -37,4 +37,4 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [❓ Ngọn Đồi Toàn Tri](guide/8-Configuration-QA.md)
 - [🎛️ Cổ Vật Quyền Năng](guide/AIOManager-Setup.md)
 - [📜 Quái Thư Hắc Ám](guide/Changelog.md)
-- [🔔 Updates](guide/Updates.md)
+- [🔔 Văn Khố Vĩnh Hằng](guide/Updates.md)
