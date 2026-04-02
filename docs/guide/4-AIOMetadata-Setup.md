@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "🔎 4. AIOMetadata [Metadata & Catalogs]"
+title: "🔎 4. Quả Cầu Thấu Thị"
 ---
 
-# 🔎 4. AIOMetadata [Metadata & Catalogs]
+# 🔎 4. Quả Cầu Thấu Thị
 
 **AIOMetadata** is the metadata and catalogs layer. It improves discovery by powering richer catalogs, search behavior, and integrations, so browsing titles in Stremio feels more complete and organized.
 
