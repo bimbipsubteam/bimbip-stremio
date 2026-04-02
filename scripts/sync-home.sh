@@ -125,7 +125,7 @@ write_if_changed "$README_OUT" < "$tmp_readme"
   cat <<'FM'
 ---
 layout: default
-title: Home
+title: Găng Tay Điện Ảnh
 ---
 
 FM
