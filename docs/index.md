@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Găng Tay Điện Ảnh
+title: Home
 ---
 
 # 🎬 CẨM NANG NẮM GIỮ THỰC TẠI ĐIỆN ẢNH 🎬
