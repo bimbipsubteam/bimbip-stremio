@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "❓ Configuration Q&A"
+title: "❓ Ngọn Đồi Toàn Tri"
 ---
 
-# ❓ Configuration Q&A
+# ❓ Ngọn Đồi Toàn Tri
 
 I am including this section for anyone who has any additional questions or is encountering any common issues. Most of this is already in the guide, but a lot of you skip them :), so I have extracted them here for you to find answers quickly:
 
