@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "🔰 Beginner Concepts"
+title: "🔰 Bí Thư Khởi Nguyên"
 ---
 
-# 🔰 Beginner Concepts
+# 🔰 Bí Thư Khởi Nguyên
 
 This guide assumes you are aiming for a Stremio setup that is **clean**, **reliable**, and **consistent across devices**. The concepts below explain what each component is doing, why it matters, and why the combination used in this guide tends to work better than a basic "single addon" setup.
 
