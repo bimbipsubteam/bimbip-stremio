@@ -35,25 +35,22 @@
       
       <!-- Ô Search -->
       <div class="topbar-search">
-        <input type="text" id="search-input" placeholder="Search guide..." aria-label="Search">
+        <input type="text" id="search-input" placeholder="Search guide..." aria-label="Search" autocomplete="off">
+        <!-- Khung chứa kết quả tìm kiếm thả xuống -->
+        <div id="search-results" class="search-dropdown" style="display: none;"></div>
       </div>
 
       <!-- Các nút Mạng xã hội -->
       <div class="topbar-social">
         <!-- Facebook -->
-        <a href="https://facebook.com/your-page" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="https://www.facebook.com/bimbipnausup" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
         </a>
         <!-- Discord -->
-        <a href="https://discord.gg/your-invite" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+        <a href="https://discord.gg/mcudisvn" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Discord">
           <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189z"/></svg>
         </a>
       </div>
-
-      <!-- Nút Ko-fi -->
-      <a href="https://ko-fi.com/luckynumb3rs" class="topbar-kofi" target="_blank" rel="noopener noreferrer" aria-label="Support on Ko-fi">
-        <img src="{{ '/images/kofi.png' | relative_url }}" alt="Ko-fi tipping button">
-      </a>
 
       <!-- Nút Đổi giao diện Sáng/Tối -->
       <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" aria-pressed="false">◐</button>
@@ -95,13 +92,92 @@
       {
         "path": {{ p.path | jsonify }},
         "url": {{ p.url | relative_url | jsonify }},
-        "title": {{ p.title | default: p.name | replace: '.md', '' | jsonify }}
+        "title": {{ p.title | default: p.name | replace: '.md', '' | jsonify }},
+        "content": {{ p.content | strip_html | strip_newlines | jsonify }} 
       }
       {% assign first_guide = false %}
       {% endif %}
       {% endfor %}
     ];
     window.CURRENT_PATH = {{ page.path | jsonify }};
+    
+        /* =========================================
+       CHỨC NĂNG LIVE SEARCH (TÌM KIẾM NỘI BỘ)
+       ========================================= */
+    document.addEventListener("DOMContentLoaded", function() {
+      const searchInput = document.getElementById('search-input');
+      const searchResults = document.getElementById('search-results');
+      const docsPages = window.DOCS_PAGES || []; // Lấy dữ liệu bài viết đã có sẵn
+
+      if (!searchInput || !searchResults) return;
+
+      // Lắng nghe sự kiện mỗi khi bạn gõ phím
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        
+        // Nếu xóa hết chữ thì ẩn hộp kết quả
+        if (query.length === 0) {
+          searchResults.style.display = 'none';
+          return;
+        }
+        
+        const matches = [];
+
+        // Duyệt qua từng bài viết để tìm kiếm
+        docsPages.forEach(page => {
+          const title = page.title ? page.title.toLowerCase() : "";
+          const content = page.content ? page.content.toLowerCase() : "";
+          
+          const matchInTitle = title.includes(query);
+          const matchInContent = content.includes(query);
+
+          if (matchInTitle || matchInContent) {
+            let snippet = "";
+            
+            // Nếu tìm thấy trong nội dung, tạo một đoạn trích ngắn gọn
+            if (matchInContent) {
+              const matchIndex = content.indexOf(query);
+              // Cắt 30 ký tự trước và 40 ký tự sau từ khóa để làm đoạn trích
+              const start = Math.max(0, matchIndex - 30);
+              const end = Math.min(content.length, matchIndex + query.length + 40);
+              
+              // Lấy đoạn trích gốc (chưa in hoa in thường)
+              let rawSnippet = page.content.substring(start, end);
+              
+              // Highlight từ khóa bằng màu vàng Wolverine
+              const regex = new RegExp(`(${query})`, "gi");
+              snippet = rawSnippet.replace(regex, `<b style="color: var(--accent-2); text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);">$1</b>`);
+              
+              snippet = `<div class="search-snippet">...${snippet}...</div>`;
+            }
+
+            matches.push(`
+              <a href="${page.url}">
+                <div class="search-title">⚡ ${page.title}</div>
+                ${snippet}
+              </a>
+            `);
+          }
+        });
+
+        // Tạo giao diện HTML cho kết quả
+        if (matches.length > 0) {
+          searchResults.innerHTML = matches.join('');
+        } else {
+          searchResults.innerHTML = '<div class="search-no-results">💀 Không tìm thấy kết quả nào</div>'; // Phong cách Deadpool :D
+        }
+        
+        // Hiển thị hộp kết quả
+        searchResults.style.display = 'block';
+      });
+
+      // Nhấp chuột ra chỗ khác thì tự động đóng hộp kết quả
+      document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+          searchResults.style.display = 'none';
+        }
+      });
+    });
   </script>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
