@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "📚 3. AIOStreams [Find Streams]"
+title: "🗝️ 3. Chìa Khóa Tinh Vân"
 ---
 
-# 📚 3. AIOStreams [Find Streams]
+# 🗝️ 3. Chìa Khóa Tinh Vân
 
 **AIOStreams** is the stream aggregation engine in this setup. It combines multiple scraping sources into one consistent results list, and lets you apply filtering, sorting, and formatting so the best links appear first.
 
