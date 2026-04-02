@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "🎛️ AIOManager [Power Users]"
+title: "Cổ Vật Quyền Năng"
 ---
 
-# 🎛️ AIOManager [Power Users]
+# Cổ Vật Quyền Năng
 
 **AIOManager** is fully optional and intended for power users who want to push their setup further by creating redundant, resilient configurations. If you are looking to increase reliability, add fallback layers, or manage multiple Stremio accounts in a structured way, this chapter is for you.
 
