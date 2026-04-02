@@ -29,7 +29,7 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [🔰 Bí Thư Khởi Nguyên](guide/0-Beginner-Concepts.md)
 - [📝 1. Khế Ước Thiêng Liêng](guide/1-Accounts-Preparation.md)
 - [⚙️ 2. Cấm Vật Tiền Nhân](guide/2-Stremio-Initialization.md)
-- [📚 3. AIOStreams [Find Streams]](guide/3-AIOStreams-Setup.md)
+- [🗝️ 3. Chìa Khóa Tinh Vân](guide/3-MCUDISVN-Setup.md)
 - [🔎 4. AIOMetadata [Metadata & Catalogs]](guide/4-AIOMetadata-Setup.md)
 - [🧹 5. Cinebye [Clean-Up]](guide/5-Cinebye-Cleanup.md)
 - [🤖 6. Personalized & Automated Lists](guide/6-Personalized-Lists.md)
