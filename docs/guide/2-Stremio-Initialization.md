@@ -1,9 +1,9 @@
 ---
 layout: guide
-title: "⚙️ 2. Stremio Account Initialization"
+title: "⚙️ 2. Cấm Vật Tiền Nhân"
 ---
 
-# ⚙️ 2. Stremio Account Initialization
+# ⚙️ 2. Cấm Vật Tiền Nhân
 
 Second, let's prepare the Stremio account properly:
 
