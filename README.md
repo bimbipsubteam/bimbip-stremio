@@ -29,7 +29,7 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [💎 5. Thần Chú Sung Túc](docs/guide/5-MCUDISVN-Using.md)
 - [🤖 6. Thực Thể Giả Kim](docs/guide/6-Personalized-Lists.md)
 - [🧿 Điện Thờ Hiền Triết](docs/guide/7-Additional-Stuff.md)
-- [❓ Configuration Q&A](docs/guide/8-Configuration-QA.md)
+- [❓ Ngọn Đồi Toàn Tri](docs/guide/8-Configuration-QA.md)
 - [🎛️ AIOManager [Power Users]](docs/guide/AIOManager-Setup.md)
 - [📜 Changelog](docs/guide/Changelog.md)
 - [🔔 Updates](docs/guide/Updates.md)
