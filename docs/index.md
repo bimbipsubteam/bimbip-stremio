@@ -31,7 +31,7 @@ Sẵn sàng chưa? Úm ba la xì bùa!
 - [⚙️ 2. Cấm Vật Tiền Nhân](guide/2-Stremio-Initialization.md)
 - [🗝️ 3. Chìa Khóa Tinh Vân](guide/3-MCUDISVN-Setup.md)
 - [🔎 4. Quả Cầu Thấu Thị](guide/4-AIOMetadata-Setup.md)
-- [🧹 5. Cinebye [Clean-Up]](guide/5-Cinebye-Cleanup.md)
+- [💎 5. Thần Chú Sung Túc](guide/5-MCUDISVN-Using.md)
 - [🤖 6. Personalized & Automated Lists](guide/6-Personalized-Lists.md)
 - [🛠️ Additional Stuff](guide/7-Additional-Stuff.md)
 - [❓ Configuration Q&A](guide/8-Configuration-QA.md)
