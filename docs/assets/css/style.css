@@ -7,22 +7,17 @@
   --bg: linear-gradient(135deg, #2b0000 0%, #050505 50%, #2b2500 100%) fixed;
   
   /* Các panel sẽ hơi trong suốt để nhìn thấy gradient bên dưới (Glassmorphism) */
-  --panel: rgba(20, 20, 25, 0.9); 
+  --panel: rgba(20, 20, 25, 0.9);
   --panel-2: rgba(30, 30, 35, 0.9);
-  
   --text: #ffffff;
   --muted: #a0a0a5;
-  
   --accent: #8B0000;          /* Đỏ Deadpool */
   --accent-2: #FFD700;        /* Vàng Wolverine */
-  
   --border: rgba(255, 215, 0, 0.2); /* Đổi sang viền vàng nhẹ */
-  --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow: 0 7px 20px rgba(255, 215, 0, 0.1);
   --radius: 14px;
-  
   --pill-bg: rgba(212, 34, 16, 0.7);
   --pill-text: #FFD700;
-  
   --quote-bg: rgba(226, 54, 54, 0.1);
   --quote-border: #D42210;
   --quote-text: #f0f0f0;
@@ -34,7 +29,7 @@ html[data-theme="dark"] {
   --border: rgba(226, 54, 54, 0.3); /* Viền đỏ trong suốt */
 }
 
-* { box-sizing: border-box; }
+* {box-sizing: border-box;}
 html, body { margin: 0; padding: 0; }
 
 body {
@@ -150,7 +145,8 @@ a:hover {
 }
 
 .topbar-logo {
-  width: 44px; height: 44px;
+  width: 44px;
+  height: 44px;
   flex: 0 0 auto;
   border: none;
   /* Tạo viền sát theo nét logo bằng filter */
@@ -159,8 +155,11 @@ a:hover {
           drop-shadow(-1px 0 0 var(--accent-2)) 
           drop-shadow(0 1px 0 var(--accent-2)) 
           drop-shadow(0 -1px 0 var(--accent-2));
-
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy mượt mà */
+}
+
+img.topbar-logo {
+    box-shadow: none;
 }
 
 .topbar-logo:hover {
@@ -175,7 +174,7 @@ a:hover {
 
 .topbar-brand-text { display: flex; flex-direction: column; min-width: 0; }
 .topbar-title { font-size: 1.18rem; font-weight: 700; line-height: 1.1; }
-.topbar-subtitle { margin-top: 0.08rem; font-size: 0.83rem; color: #D42210; line-height: 1.15; }
+.topbar-subtitle {margin-top: 0.08rem;font-size: 0.95rem;color: #D42210;line-height: 1.15;}
 
 /* Buttons & Icons */
 .icon-btn, .social-btn {
@@ -209,7 +208,7 @@ a:hover {
 .topbar-search input {
   padding: 8px 16px;
   border-radius: 20px;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   background: var(--panel-2);
   color: var(--text);
   outline: none;
@@ -245,16 +244,25 @@ a:hover {
   width: 300px;
   background: var(--panel);
   border: 2px solid var(--accent-2);
-  border-radius: 12px;
+  border-radius: 12px !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 215, 0, 0.2);
   backdrop-filter: blur(10px);
   max-height: 400px;
-  overflow-y: auto;
+  overflow: hidden;
   z-index: 100;
-  padding: 0.5rem;
+  padding: 0;
 }
 
-.search-dropdown a {
+.search-content {
+  max-height: 400px; /* Chuyển max-height xuống đây */
+  overflow-y: auto;
+  padding: 0.5rem; /* Đưa padding vào lớp này */
+  
+  /* Đẩy nội dung bên phải vào một chút để thanh cuộn không sát mép */
+  padding-right: 10px; 
+}
+
+.search-content a {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -269,7 +277,7 @@ a:hover {
   margin-bottom: 4px;
 }
 
-.search-dropdown a:hover {
+.search-content a:hover {
   background: var(--accent);
   color: #fff;
   border-color: var(--border);
@@ -278,7 +286,7 @@ a:hover {
 }
 
 .search-title { font-weight: 700; color: var(--text); }
-.search-dropdown a:hover .search-title { color: #fff; }
+.search-content a:hover .search-title { color: #fff; }
 
 .search-snippet {
   font-size: 0.75rem;
@@ -370,7 +378,7 @@ body.nav-open .nav-backdrop {
    COMPONENTS (Cards, Quotes, Tags, Pager)
    ========================================= */
 .doc-card {
-  border: 1px solid var(--border);
+  border: 3px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 1.4rem clamp(1rem, 2vw, 2rem) 1.2rem;
@@ -409,7 +417,7 @@ body.nav-open .nav-backdrop {
   transform: translateY(-1px);
 }
 
-img { max-width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+img {max-width: 100%;height: auto;border-radius: 12px;border: 1px solid var(--border);box-shadow: var(--shadow);}
 .doc-card a[href*="ko-fi.com"] img { width: auto; max-width: min(100%, 150px); border: 0; box-shadow: none; border-radius: 0; }
 
 code, pre { font-family: "IBM Plex Mono", "Cascadia Code", monospace; }
@@ -422,7 +430,7 @@ pre { overflow: auto; background: var(--panel-2); border: 1px solid var(--border
 .quick-nav li { margin: 0.24rem 0; }
 .quick-nav details > summary { cursor: pointer; font-weight: 600; color: var(--text); list-style: none; }
 .quick-nav details > summary::-webkit-details-marker { display: none; }
-.quick-nav details > summary::before { content: "▸"; margin-right: 0.45rem; color: var(--muted); }
+.quick-nav details > summary::before { content: "✨"; margin-right: 0.45rem; color: var(--muted); }
 .quick-nav details[open] > summary::before { content: "▾"; }
 .quick-nav details ul { margin-top: 0.55rem; }
 
@@ -446,16 +454,19 @@ pre { overflow: auto; background: var(--panel-2); border: 1px solid var(--border
 /* =========================================
    SCROLLBAR
    ========================================= */
-::-webkit-scrollbar { width: 10px; background-color: #050505; }
-::-webkit-scrollbar-track { background-color: #050505; border-left: 1px solid rgba(226, 54, 54, 0.2); }
+::-webkit-scrollbar {width: 10px;background-color: #050505;}
+::-webkit-scrollbar-track {background-color: #050505;border-left: 1px solid rgba(226, 54, 54, 0.2);}
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, var(--accent), var(--accent-2));
-  border-radius: 10px; border: 2px solid #050505; 
+  border-radius: 10px;
+  border: none;
 }
 ::-webkit-scrollbar-thumb:hover { background: linear-gradient(to bottom, var(--accent-2), var(--accent)); box-shadow: 0 0 10px var(--accent-2); }
-.search-dropdown::-webkit-scrollbar { width: 6px; }
-.search-dropdown::-webkit-scrollbar-track { background: transparent; border: none;}
-.search-dropdown::-webkit-scrollbar-thumb { background: var(--accent-2); border-radius: 10px; border: none; }
+
+/* Tùy chỉnh thanh cuộn cho lớp trong (Tùy chọn) */
+.search-content::-webkit-scrollbar {width: 6px;}
+.search-content::-webkit-scrollbar-thumb {background: var(--accent-2);border-radius: 10px;border:none;}
+.search-content::-webkit-scrollbar-track {background: solid transparent;border-radius: 10px;border:none;}
 
 /* =========================================
    MEDIA QUERIES (Gộp tất cả logic Responsive)
