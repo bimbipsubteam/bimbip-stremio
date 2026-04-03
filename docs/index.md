@@ -10,7 +10,7 @@ title: Găng Tay Điện Ảnh
 
 Sau nhiều lần thử nghiệm cũng như kiểm tra các Addon khác nhau, thằng bạn mình đã đạt được thiết lập Stremio tối ưu, bạn có thể xem [ở đây](https://luckynumb3rs.github.io/stremio-perfect-setup/). Mặc dù trông có vẻ là một hướng dẫn rất dài, nhưng thực ra nó rất dễ thực hiện vì được trình bày kỹ lưỡng và mô tả mọi thứ chi tiết từng bước một. Khi đọc qua một lượt, bạn sẽ thấy những cài đặt này tùy thuộc vào sở thích và mỗi người có những ưu tiên khác nhau, cần dùng hoặc không.
 
-Nhằm giúp mọi người làm quen với Stremio thật nhanh và sử dụng được ngay Addon MCUDISVN, Chef Bìm Bịp đã chọn lọc thông tin và chế tạo ra *==**Cine-Gauntlet - Găng Tay Điện Ảnh.**==* Đây là công cụ giúp bạn nắm giữ 6 "viên đá" cần thiết để làm chủ thực tại điện ảnh Stremio. Hãy bắt đầu với những hướng dẫn dễ dàng và dễ hiểu nhất rồi sau đó tự điều chỉnh bất kỳ thay đổi nào bạn muốn. 😊
+Nhằm giúp mọi người làm quen với Stremio thật nhanh và sử dụng được ngay Addon MCUDISVN, Chef Bìm Bịp đã chọn lọc thông tin và chế tạo ra <b><i><mark>Cine-Gauntlet - Găng Tay Điện Ảnh</mark></i></b>. Đây là công cụ giúp bạn nắm giữ 6 "viên đá" cần thiết để làm chủ thực tại điện ảnh Stremio. Hãy bắt đầu với những hướng dẫn dễ dàng và dễ hiểu nhất rồi sau đó tự điều chỉnh bất kỳ thay đổi nào bạn muốn. 😊
 
 >## **CHÚ Ý:**
 >* Nếu bạn **vừa mới biết đến Stremio** và tò mò muốn **hiểu rõ các khái niệm liên quan đến Stremio và cách nó hoạt động,** hãy truy cập [**🔰 Bí Sử Khởi Nguyên**](guide/0-Beginner-Concepts.md).
@@ -20,7 +20,7 @@ Nhằm giúp mọi người làm quen với Stremio thật nhanh và sử dụng
 
 Nếu bạn đang phân vân liệu nó có xứng đáng với thời gian bỏ ra và có thể thay thế các phương pháp giải trí hiện tại hay không thì đây là một chút tóm tắt:
 
-* **==Giao Diện Tối Giản==**: Không phải đẹp nhất và *chưa* cho phép chỉnh sửa nhưng đủ đơn giản để sử dụng.
+* <mark>**Giao Diện Tối Giản**</mark>: Không phải đẹp nhất và *chưa* cho phép chỉnh sửa nhưng đủ đơn giản để sử dụng.
 * **==Tất Cả Trong Một==**: Khả năng tích hợp và tùy biến cao giúp "vạn pháp quy tông", đưa mọi nguồn giải trí về một nơi. Bạn không cần phải mất công ghi nhớ xem gì, ở đâu nữa.
 * **==MCUDISVN==**: Lý do đầu tiên và quan trọng nhất khiến bạn mở ra cuốn cẩm nang này.
 
