@@ -114,7 +114,7 @@ mark {
 mark2 {
     background-color: transparent; /* Màu nền vàng */
     color: #D42210 !important; /* Màu chữ đen */
-    text-shadow: 0 0 6px rgba(255, 158, 158, 0.4);
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
 }
 
 /* =========================================
