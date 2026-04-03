@@ -37,8 +37,8 @@
       <div class="topbar-search">
         <input type="text" id="search-input" placeholder="Alô cần tìm gì đó?" aria-label="Search" autocomplete="off">
         <!-- Khung chứa kết quả tìm kiếm thả xuống -->
-        <div id="search-result" class="search-dropdown" style="display: none;">
-          <div id="search-results" class="search-content">
+        <div id="search-results" class="search-dropdown" style="display: none;">
+          <div id="search-inner" class="search-content">
           </div>
         </div>
       </div>
@@ -109,75 +109,44 @@
        ========================================= */
     document.addEventListener("DOMContentLoaded", function() {
       const searchInput = document.getElementById('search-input');
-      const searchResults = document.getElementById('search-results');
-      const docsPages = window.DOCS_PAGES || []; // Lấy dữ liệu bài viết đã có sẵn
-
-      if (!searchInput || !searchResults) return;
-
-      // Lắng nghe sự kiện mỗi khi bạn gõ phím
+      const searchDropdown = document.getElementById('search-results'); // Thẻ cha (giữ border)
+      const searchContent = document.querySelector('#search-results .search-content'); // Thẻ con (cuộn nội dung)
+      const docsPages = window.DOCS_PAGES || [];
+    
+      if (!searchInput || !searchContent) return;
+    
       searchInput.addEventListener('input', function(e) {
         const query = e.target.value.toLowerCase().trim();
         
-        // Nếu xóa hết chữ thì ẩn hộp kết quả
         if (query.length === 0) {
-          searchResults.style.display = 'none';
+          searchDropdown.style.display = 'none';
           return;
         }
         
-        const matches = [];
-
-        // Duyệt qua từng bài viết để tìm kiếm
-        docsPages.forEach(page => {
-          const title = page.title ? page.title.toLowerCase() : "";
-          const content = page.content ? page.content.toLowerCase() : "";
-          
-          const matchInTitle = title.includes(query);
-          const matchInContent = content.includes(query);
-
-          if (matchInTitle || matchInContent) {
-            let snippet = "";
-            
-            // Nếu tìm thấy trong nội dung, tạo một đoạn trích ngắn gọn
-            if (matchInContent) {
-              const matchIndex = content.indexOf(query);
-              // Cắt 30 ký tự trước và 40 ký tự sau từ khóa để làm đoạn trích
-              const start = Math.max(0, matchIndex - 30);
-              const end = Math.min(content.length, matchIndex + query.length + 40);
-              
-              // Lấy đoạn trích gốc (chưa in hoa in thường)
-              let rawSnippet = page.content.substring(start, end);
-              
-              // Highlight từ khóa bằng màu vàng Wolverine
-              const regex = new RegExp(`(${query})`, "gi");
-              snippet = rawSnippet.replace(regex, `<b style="color: var(--accent-2); text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);">$1</b>`);
-              
-              snippet = `<div class="search-snippet">...${snippet}...</div>`;
-            }
-
-            matches.push(`
-              <a href="${page.url}">
-                <div class="search-title">⚡ ${page.title}</div>
-                ${snippet}
-              </a>
-            `);
+        const matches = docsPages.filter(page => {
+          const title = (page.title || "").toLowerCase();
+          const content = (page.content || "").toLowerCase();
+          return title.includes(query) || content.includes(query);
+        }).map(page => {
+          let snippet = "";
+          if (page.content && page.content.toLowerCase().includes(query)) {
+            const matchIndex = page.content.toLowerCase().indexOf(query);
+            const start = Math.max(0, matchIndex - 30);
+            const end = Math.min(page.content.length, matchIndex + query.length + 40);
+            let rawSnippet = page.content.substring(start, end);
+            const regex = new RegExp(`(${query})`, "gi");
+            snippet = `<div class="search-snippet">...${rawSnippet.replace(regex, '<b style="color: var(--accent-2)">$1</b>')}...</div>`;
           }
+          return `<a href="${page.url}"><div class="search-title">⚡ ${page.title}</div>${snippet}</a>`;
         });
-
-        // Tạo giao diện HTML cho kết quả
-        if (matches.length > 0) {
-          searchResults.innerHTML = matches.join('');
-        } else {
-          searchResults.innerHTML = '<div class="search-no-results">💀 Không tìm thấy kết quả nào</div>'; // Phong cách Deadpool :D
-        }
-        
-        // Hiển thị hộp kết quả
-        searchResults.style.display = 'block';
+    
+        searchContent.innerHTML = matches.length > 0 ? matches.join('') : '<div class="search-no-results">💀 Không tìm thấy kết quả nào</div>';
+        searchDropdown.style.display = 'block';
       });
-
-      // Nhấp chuột ra chỗ khác thì tự động đóng hộp kết quả
+    
       document.addEventListener('click', function(e) {
-        if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
-          searchResults.style.display = 'none';
+        if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+          searchDropdown.style.display = 'none';
         }
       });
     });
