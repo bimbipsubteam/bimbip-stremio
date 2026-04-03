@@ -151,9 +151,10 @@ a:hover {
 
 .topbar-logo {
   width: 38px; height: 38px;
+  align-items: center;
+  justify-content: center;
   flex: 0 0 auto;
   border: 2px solid var(--accent-2);
-  border-radius: 50%;
   box-shadow: 0 0 15px rgba(226, 54, 54, 0.7);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy mượt mà */
 }
@@ -176,12 +177,12 @@ a:hover {
   width: 38px; height: 38px;
   border-radius: 10px;
   background: var(--panel-2);
-  border: 1px solid var(--accent-2);
+  border: 2px solid var(--accent-2);
   color: var(--accent-2);
   cursor: pointer;
   font-size: 1.2rem;
   flex: 0 0 auto;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .icon-btn:hover, .social-btn:hover {
