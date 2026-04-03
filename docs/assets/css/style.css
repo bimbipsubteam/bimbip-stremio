@@ -158,9 +158,7 @@ a:hover {
   filter: drop-shadow(1px 0 0 var(--accent-2)) 
           drop-shadow(-1px 0 0 var(--accent-2)) 
           drop-shadow(0 1px 0 var(--accent-2)) 
-          drop-shadow(0 -1px 0 var(--accent-2))
-          /* Thêm hiệu ứng phát sáng đỏ như cũ của bạn */
-          drop-shadow(0 0 10px rgba(226, 54, 54, 0.8));
+          drop-shadow(0 -1px 0 var(--accent-2));
 
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy mượt mà */
 }
