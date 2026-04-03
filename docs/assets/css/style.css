@@ -128,7 +128,7 @@ a:hover {
   flex-wrap: nowrap;
   gap: 0.9rem;
   padding: 0 1rem;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
   box-shadow: 0 4px 20px rgba(226, 54, 54, 0.4);
   background: var(--panel);
 }
@@ -150,7 +150,7 @@ a:hover {
 }
 
 .topbar-logo {
-  width: 40px; height: 40px;
+  width: 44px; height: 44px;
   flex: 0 0 auto;
   border: none;
   /* Tạo viền sát theo nét logo bằng filter */
@@ -163,15 +163,18 @@ a:hover {
           drop-shadow(0 0 10px rgba(226, 54, 54, 0.8));
 
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy mượt mà */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.topbar-brand:hover .topbar-logo {
+.topbar-brand:hover {
   transform: scale(1.15) translateY(-2px); /* Phóng to và nảy nhẹ lên */
   border-color: var(--accent); /* Viền chuyển sang Đỏ Deadpool */
   box-shadow: 0 0 10px var(--accent-2), 0 0 30px rgba(226, 54, 54, 0.8);
+}
+
+.topbar-logo:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px var(--accent-2)) 
+          drop-shadow(0 0 15px rgba(226, 54, 54, 1));
 }
 
 .topbar-brand-text { display: flex; flex-direction: column; min-width: 0; }
