@@ -98,7 +98,7 @@ mark {
     text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
 }
 
-/* Chữ đỏ viền trắng */
+/* Chữ đỏ viền trắng 
 .trang-do {
     color: #D42210;
     font-weight: bold;
@@ -109,6 +109,12 @@ mark {
          1px -1px 0 #fff,
         -1px  1px 0 #fff,
          1px  1px 0 #fff;
+} */
+
+mark2 {
+    background-color: transparent; /* Màu nền vàng */
+    color: #D42210 !important; /* Màu chữ đen */
+    text-shadow: 0 0 6px rgba(255, 158, 158, 0.4);
 }
 
 /* =========================================
