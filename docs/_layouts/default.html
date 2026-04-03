@@ -30,15 +30,15 @@
       </a>
     </div>
 
-    <!-- Cụm bên phải: Search, Social, Ko-fi, Đổi theme -->
+    <!-- Cụm bên phải: , Social, Ko-fi, Đổi theme -->
     <div class="topbar-right">
       
-      <!-- Ô Search -->
+      <!-- Ô  -->
       <div class="topbar-search">
         <input type="text" id="search-input" placeholder="Alô cần tìm gì đó?" aria-label="Search" autocomplete="off">
         <!-- Khung chứa kết quả tìm kiếm thả xuống -->
-        <div id="search-results" class="search-dropdown" style="display: none;">
-          <div class="search-content">
+        <div id="search-result" class="search-dropdown" style="display: none;">
+          <div id="search-results" class="search-content">
           </div>
         </div>
       </div>
@@ -109,7 +109,7 @@
        ========================================= */
     document.addEventListener("DOMContentLoaded", function() {
       const searchInput = document.getElementById('search-input');
-      const searchResults = document.getElementById('.search-content');
+      const searchResults = document.getElementById('search-results');
       const docsPages = window.DOCS_PAGES || []; // Lấy dữ liệu bài viết đã có sẵn
 
       if (!searchInput || !searchResults) return;
