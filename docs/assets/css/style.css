@@ -90,6 +90,9 @@ a:hover {
   text-shadow: 0 0 10px var(--accent-2);
 }
 
+/* CSS Markdown */
+mark { color: var(--accent-2) !important; }
+
 /* =========================================
    LAYOUT CHÍNH
    ========================================= */
