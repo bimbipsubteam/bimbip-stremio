@@ -150,19 +150,28 @@ a:hover {
 }
 
 .topbar-logo {
-  width: 38px; height: 38px;
+  width: 40px; height: 40px;
+  flex: 0 0 auto;
+  border: none;
+  /* Tạo viền sát theo nét logo bằng filter */
+  /* Dùng 4 hướng để tạo viền sắc nét bao quanh logo */
+  filter: drop-shadow(1px 0 0 var(--accent-2)) 
+          drop-shadow(-1px 0 0 var(--accent-2)) 
+          drop-shadow(0 1px 0 var(--accent-2)) 
+          drop-shadow(0 -1px 0 var(--accent-2))
+          /* Thêm hiệu ứng phát sáng đỏ như cũ của bạn */
+          drop-shadow(0 0 10px rgba(226, 54, 54, 0.8));
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy mượt mà */
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 auto;
-  border: 2px solid var(--accent-2);
-  box-shadow: 0 0 15px rgba(226, 54, 54, 0.7);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy mượt mà */
 }
 
 .topbar-brand:hover .topbar-logo {
   transform: scale(1.15) translateY(-2px); /* Phóng to và nảy nhẹ lên */
   border-color: var(--accent); /* Viền chuyển sang Đỏ Deadpool */
-  box-shadow: 0 0 15px var(--accent-2), 0 0 30px rgba(226, 54, 54, 0.8);
+  box-shadow: 0 0 10px var(--accent-2), 0 0 30px rgba(226, 54, 54, 0.8);
 }
 
 .topbar-brand-text { display: flex; flex-direction: column; min-width: 0; }
