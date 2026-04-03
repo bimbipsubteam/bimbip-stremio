@@ -91,7 +91,12 @@ a:hover {
 }
 
 /* CSS Markdown */
-mark { color: var(--accent-2) !important; }
+/* Định dạng cho thẻ <mark> */
+mark {
+    background-color: transparent; /* Màu nền vàng */
+    color: var(--accent-2) !important; /* Màu chữ đen */
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+}
 
 /* =========================================
    LAYOUT CHÍNH
