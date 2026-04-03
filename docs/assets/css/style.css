@@ -429,8 +429,8 @@ pre { overflow: auto; background: var(--panel-2); border: 1px solid var(--border
 .quick-nav li { margin: 0.24rem 0; }
 .quick-nav details > summary { cursor: pointer; font-weight: 600; color: var(--text); list-style: none; }
 .quick-nav details > summary::-webkit-details-marker { display: none; }
-.quick-nav details > summary::before { content: "✨"; margin-right: 0.45rem; color: var(--muted); }
-.quick-nav details[open] > summary::before { content: "▾"; }
+.quick-nav details > summary::before { content: "👉"; margin-right: 0.45rem; color: var(--muted); }
+.quick-nav details[open] > summary::before { content: "👇"; }
 .quick-nav details ul { margin-top: 0.55rem; }
 
 /* Pager (Trang trước/sau) */
