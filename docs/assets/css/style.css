@@ -120,6 +120,17 @@ mark2 {
 /* =========================================
    LAYOUT CHÍNH
    ========================================= */
+/* html {
+    zoom: 1.3; 
+    -moz-transform: scale(1.3);
+    -moz-transform-origin: 0 0;
+    width: 76.92%;
+} */
+
+html {
+  font-size: 130%; /* Hoặc dùng 20px nếu font mặc định đang là 16px */
+}
+
 .layout {
   margin-left: 0; /* Nội dung full màn hình do Sidebar ẩn mặc định */
   padding-top: var(--header-height);
@@ -128,7 +139,7 @@ mark2 {
 }
 
 .content {
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 1.1rem auto 2rem;
   padding: 0 1rem;
 }
