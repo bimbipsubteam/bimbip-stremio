@@ -79,9 +79,6 @@ h2 {
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
 
-a { color: var(--accent); }
-a:hover { color: var(--accent-2); }
-
 /* Biến các link thành màu vàng rực rỡ của Wolverine */
 a {
   color: var(--accent-2);
@@ -411,7 +408,7 @@ body.nav-open .nav-backdrop {
 }
 
 .doc-card p a:hover, .doc-card li a:hover, .doc-card blockquote a:hover, .doc-card td a:hover, .quick-nav a:hover {
-  color: var(--text); text-shadow: none;
+  color: var(--text);
   background: color-mix(in srgb, var(--pill-bg) 88%, transparent 12%);
   transform: translateY(-1px);
 }
