@@ -37,7 +37,7 @@ body {
   color: var(--text);
   font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
   line-height: 1.75;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Hiệu ứng kính mờ (Glassmorphism) */
@@ -80,6 +80,15 @@ h2 {
   text-shadow: 0 0 2px rgba(255, 191, 0, 0.9), 0 0 4px rgba(255, 176, 0, 0.6), 0 0 1rem rgba(255, 150, 0, 0.4), 0 0 2rem rgba(255, 100, 0, 0.2);
 }
 
+h2:hover {
+  color: #ffffff !important;
+  text-shadow: 
+    0 0 4px rgba(255, 191, 0, 1),
+    0 0 12px rgba(255, 176, 0, 0.8),
+    0 0 2rem rgba(255, 150, 0, 0.6),
+    0 0 4rem rgba(255, 100, 0, 0.4);
+}
+
 /* Biến các link thành màu vàng rực rỡ của Wolverine */
 a {
   color: var(--accent-2);
@@ -96,8 +105,6 @@ a:hover {
 mark {
     background-color: transparent; /* Màu nền vàng */
     color: var(--accent-2) !important; /* Màu chữ đen */
-    font-weight: bold;
-    font-style: italic;
     text-shadow: 0 0 2px rgba(255, 191, 0, 0.9), 0 0 4px rgba(255, 176, 0, 0.6), 0 0 1rem rgba(255, 150, 0, 0.4), 0 0 2rem rgba(255, 100, 0, 0.2);
 }
 
@@ -116,10 +123,12 @@ mark {
 
 mark2 {
     background-color: transparent; /* Màu nền vàng */
-    color: #D42210 !important; /* Màu chữ đen */
-    font-weight: bold;
-    font-style: italic;
-    text-shadow: 0 0 2px rgba(255, 191, 0, 0.9), 0 0 4px rgba(255, 176, 0, 0.6), 0 0 1rem rgba(255, 150, 0, 0.4), 0 0 2rem rgba(255, 100, 0, 0.2);
+    color: #ff1700 !important; /* Màu chữ đen */
+    text-shadow: 
+    0 0 1px rgba(255, 48, 48, 0.9),    /* Lớp đỏ tươi sát chữ */
+    0 0 2px rgba(212, 34, 16, 0.7),   /* Đỏ Deadpool đặc trưng (Sắc nét) */
+    0 0 1rem rgba(180, 0, 0, 0.5),   /* Lớp đỏ thẫm tỏa rộng (Máu/Crimson) */
+    0 0 2rem rgba(100, 0, 0, 0.3);   /* Hào quang đỏ tối ở xa */
 }
 
 /* =========================================
@@ -433,7 +442,7 @@ body.nav-open .nav-backdrop {
 /* Buttons/Pills trong Card */
 .doc-card p a, .doc-card li a, .doc-card blockquote a, .doc-card td a, .quick-nav a {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  padding: 0.3rem 0.8rem; margin: 0 0.1rem 0.3rem 0; font-size: 0.95rem;
+  padding: 0.3rem 0.8rem; margin: 0 0.1rem 0.3rem 0; font-size: 1.2rem;
   border-radius: 10px; background: var(--pill-bg); color: var(--pill-text);
   text-decoration: none; font-weight: 600; line-height: 1.35;
   transition: transform 160ms ease, box-shadow 160ms ease, color 160ms ease, background 160ms ease;
