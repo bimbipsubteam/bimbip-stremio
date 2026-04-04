@@ -20,7 +20,7 @@ Nhằm giúp mọi người làm quen với Stremio thật nhanh và sử dụng
 
 Nếu bạn đang phân vân liệu nó có xứng đáng với thời gian bỏ ra và có thể thay thế các phương pháp giải trí hiện tại hay không thì đây là một chút tóm tắt:
 
-* **<mark>_Giao Diện Tối Giản:_</mark>** Không phải đẹp nhất và *chưa* cho phép chỉnh sửa nhưng đủ đơn giản để sử dụng.
+* ***<mark>Giao Diện Tối Giản:</mark>*** Không phải đẹp nhất và *chưa* cho phép chỉnh sửa nhưng đủ đơn giản để sử dụng.
 * <b><i><mark>Tất Cả Trong Một:</mark></i></b> Khả năng tích hợp và tùy biến cao giúp "vạn pháp quy tông", đưa mọi nguồn giải trí về một nơi. Bạn không cần phải mất công ghi nhớ xem gì, ở đâu nữa.
 * <b><i><mark>MCUDISVN:</mark></i></b> Lý do đầu tiên và quan trọng nhất khiến bạn mở ra cuốn cẩm nang này.
 
