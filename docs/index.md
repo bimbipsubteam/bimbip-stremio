@@ -26,7 +26,7 @@ Nếu bạn đang phân vân liệu nó có xứng đáng với thời gian bỏ
 
 ## Sẵn sàng chưa? Úm ba la xì bùa! 🪄
 
-- [🔰 Bí Thư Khởi Nguyên](guide/0-Beginner-Concepts.md)
+- [🔰 Bí Sử Khởi Nguyên](guide/0-Beginner-Concepts.md)
 - [📝 1. Khế Ước Thiêng Liêng](guide/1-Accounts-Preparation.md)
 - [⚙️ 2. Cấm Vật Tiền Nhân](guide/2-Stremio-Initialization.md)
 - [🗝️ 3. Chìa Khóa Tinh Vân](guide/3-MCUDISVN-Setup.md)
