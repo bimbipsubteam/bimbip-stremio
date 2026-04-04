@@ -5,15 +5,18 @@ title: "🔰 Bí Sử Khởi Nguyên"
 
 # 🔰 KHÁI NIỆM CƠ BẢN CHO NGƯỜI MỚI
 
-Cẩm nang này giả định bạn đang hướng tới một thiết lập Stremio ***<mark>gọn gàng, đáng tin cậy và nhất quán</mark>*** trên tất cả các thiết bị. Các khái niệm dưới đây giải thích <mark2>chức năng</mark2> của từng thành phần, lý do nó <mark2>quan trọng</mark2> và tại sao <mark2>sự kết hợp</mark2> như hướng dẫn sẽ hoạt động tốt hơn so với thiết lập "addon đơn lẻ".
+Cẩm nang này giả định bạn đang hướng tới việc thiết lập Stremio ***<mark>gọn gàng, tiện lợi và nhất quán</mark>*** trên tất cả các thiết bị. Các khái niệm dưới đây giải thích **<mark2>chức năng</mark2>** của từng thành phần, lý do nó **<mark2>quan trọng</mark2>** và tại sao **<mark2>sự kết hợp</mark2>** như hướng dẫn sẽ hoạt động tốt hơn so với thêm "addon đơn lẻ".
 
-## Stremio là gì?
-* Stremio là ***<mark>một trung tâm giải trí</mark>*** hợp nhất việc khám phá và phát nội dung dưới một giao diện duy nhất. Bạn chọn phim theo poster và Stremio hiển thị thông tin và các nguồn phát có sẵn thông qua các addon.
-* Điểm quan trọng là Stremio <mark2>không lưu trữ video.</mark2> Hãy hình dung nó như <mark2>một cái thùng rỗng,</mark2> các danh sách, thông tin phim và video sẽ là <mark2>cái ruột</mark2> mà bạn cho vào từ <mark2>các addon</mark2> mà bạn cài đặt.
-* Stremio hoạt động dựa trên <mark2>tài khoản.</mark2> Khi bạn hoàn thành việc thiết lập và sau đó đăng nhập trên một thiết bị khác, <mark2>toàn bộ addon và trạng thái thư viện của bạn</mark2> cũng sẽ có sẵn ở đó. Thế nên bạn thường chỉ cần thiết lập <mark2>một lần</mark2> và sử dụng lại ở <mark2>mọi nơi.</mark2>
+## **Stremio là gì?**
+> * Stremio là ***<mark>một trung tâm giải trí</mark>*** hợp nhất việc khám phá và phát nội dung dưới một giao diện duy nhất. Bạn chọn phim theo poster và Stremio hiển thị thông tin và nguồn video thông qua addon.
+> * Điểm quan trọng là Stremio **<mark2>không lưu trữ video.</mark2>** Hãy hình dung nó như **<mark2>một cái hộp rỗng,</mark2>** danh sách, thông tin phim và video sẽ là **<mark2>những món đồ</mark2>** mà bạn cho vào từ **<mark2>các addon</mark2>** mà bạn cài đặt.
+> * Stremio hoạt động dựa trên **<mark2>tài khoản.</mark2>** Khi bạn hoàn thành thiết lập rồi đăng nhập trên một thiết bị khác, **<mark2>toàn bộ addon và trạng thái thư viện</mark2>** cũng sẽ có sẵn ở đó. Vậy nên bình thường chỉ cần thiết lập **<mark2>một lần</mark2>** và sử dụng lại ở **<mark2>mọi nơi.</mark2>**
 
-## **What platforms does Stremio support?**
-* Windows, macOS, Linux, Android (phones/tablets), Android TV and TV boxes, Web (Stremio Web), and iPhone/iPad (currently via sideloading since it's not on the App Store anymore).
+## **Stremio hỗ trợ những nền tảng nào?**
+> * ***<mark>Máy Tính & Laptop:</mark>*** Windows, macOS, Linux
+> * ***<mark>Điện Thoại Thông Minh & Máy Tính Bảng:</mark>*** Android, iOS, iPadOS
+> * ***<mark>TV:</mark>*** Android TV, Google TV, Android TV box, Android box, Fire TV Stick, Samsung TV, LG TV, Sony TV, Philips TV, Hisense TV
+> * ***<mark>VR:</mark>*** Web (Stremio Web), and iPhone/iPad (currently via sideloading since it's not on the App Store anymore).
 * The key point is not just availability. It is that your Stremio account acts as the "anchor" so your setup is portable across devices.
 
 ## **How does Stremio work, conceptually?**
