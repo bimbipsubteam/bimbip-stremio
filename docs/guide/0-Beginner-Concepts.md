@@ -68,4 +68,4 @@ Cẩm nang này giả định bạn đang hướng tới việc thiết lập St
 
 Lý thuyết đã xong, giờ là lúc biến những dòng chữ này thành thực tế. Hãy đọc tiếp để bắt đầu xây dựng "đế chế" giải trí của riêng bạn. Một chân trời điện ảnh mượt mà, chuyên nghiệp và "đáng mồ hôi công sức" đang chờ đón bạn phía trước!
 
-**<mark>Chúc bạn có được những giờ phút xem phim thật bùng nổ 🤩</mark>**
+**<mark>Chúc bạn có những giờ phút xem phim thật bùng nổ 🤩</mark>**
