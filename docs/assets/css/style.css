@@ -36,7 +36,8 @@ body {
   background: var(--bg) !important;
   color: var(--text);
   font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
-  line-height: 1.65;
+  line-height: 1.75;
+  font-size: 17px;
 }
 
 /* Hiệu ứng kính mờ (Glassmorphism) */
@@ -68,13 +69,13 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
-h1 { margin: 0 0 0.5rem; font-size: clamp(1.45rem, 2.1vw, 2.1rem); }
+h1 { margin: 0 0 0.75rem; font-size: clamp(1.8rem, 3vw, 2.8rem); }
 
 h2 {
-  margin-top: 1.4rem;
-  padding-top: 1rem;
+  margin-top: 1.8rem;
+  padding-top: 1.2rem;
   border-top: 1px solid var(--accent);
-  font-size: clamp(1.08rem, 1.6vw, 1.35rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
   color: var(--accent-2) !important;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
 }
@@ -120,17 +121,6 @@ mark2 {
 /* =========================================
    LAYOUT CHÍNH
    ========================================= */
-/* html {
-    zoom: 1.3; 
-    -moz-transform: scale(1.3);
-    -moz-transform-origin: 0 0;
-    width: 76.92%;
-} */
-
-html {
-  font-size: 130%; /* Hoặc dùng 20px nếu font mặc định đang là 16px */
-}
-
 .layout {
   margin-left: 0; /* Nội dung full màn hình do Sidebar ẩn mặc định */
   padding-top: var(--header-height);
@@ -139,9 +129,9 @@ html {
 }
 
 .content {
-  max-width: 1400px;
-  margin: 1.1rem auto 2rem;
-  padding: 0 1rem;
+  max-width: 1280px;
+  margin: 1.5rem auto 3rem;;
+  padding: 0 1.5rem;
 }
 
 /* =========================================
@@ -415,7 +405,7 @@ body.nav-open .nav-backdrop {
   border: 3px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.4rem clamp(1rem, 2vw, 2rem) 1.2rem;
+  padding: 1.8rem clamp(1rem, 2vw, 2rem) 1.2rem;
   overflow-wrap: anywhere;
 }
 
@@ -439,7 +429,7 @@ body.nav-open .nav-backdrop {
 /* Buttons/Pills trong Card */
 .doc-card p a, .doc-card li a, .doc-card blockquote a, .doc-card td a, .quick-nav a {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  padding: 0.14rem 0.5rem; margin: 0 0.08rem 0.12rem 0;
+  padding: 0.3rem 0.8rem; margin: 0 0.1rem 0.3rem 0; font-size: 0.95rem;
   border-radius: 10px; background: var(--pill-bg); color: var(--pill-text);
   text-decoration: none; font-weight: 600; line-height: 1.35;
   transition: transform 160ms ease, box-shadow 160ms ease, color 160ms ease, background 160ms ease;
@@ -506,6 +496,12 @@ pre { overflow: auto; background: var(--panel-2); border: 1px solid var(--border
    MEDIA QUERIES (Gộp tất cả logic Responsive)
    ========================================= */
 @media (max-width: 1040px) {
+  body {
+    font-size: 14px; /* Giảm nhẹ một chút so với desktop để vừa màn hình máy tính bảng */
+  }
+  .content {
+    padding: 0 1rem;
+  }
   #nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
   .topbar-title { font-size: 1.05rem; }
   .topbar-subtitle { display: none; }
@@ -517,7 +513,9 @@ pre { overflow: auto; background: var(--panel-2); border: 1px solid var(--border
 }
 
 @media (max-width: 640px) {
-  .topbar { height: 66px; padding: 0 0.7rem; gap: 0.5rem; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  .topbar { height: 70px; padding: 0 0.7rem; gap: 0.5rem; }
   .topbar-logo { width: 28px; height: 28px; }
   .topbar-title { font-size: 0.95rem; }
   .nav-link, .nav-summary { font-size: 0.88rem; letter-spacing: -0.01em; }
