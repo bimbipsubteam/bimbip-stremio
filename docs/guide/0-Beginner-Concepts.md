@@ -1,16 +1,16 @@
 ---
 layout: guide
-title: "🔰 Bí Thư Khởi Nguyên"
+title: "🔰 Bí Sử Khởi Nguyên"
 ---
 
-# 🔰 Bí Thư Khởi Nguyên
+# 🔰 KHÁI NIỆM CƠ BẢN CHO NGƯỜI MỚI
 
-This guide assumes you are aiming for a Stremio setup that is **clean**, **reliable**, and **consistent across devices**. The concepts below explain what each component is doing, why it matters, and why the combination used in this guide tends to work better than a basic "single addon" setup.
+Cẩm nang này giả định bạn đang hướng tới một thiết lập Stremio ***<mark>gọn gàng, đáng tin cậy và nhất quán</mark>*** trên tất cả các thiết bị. Các khái niệm dưới đây giải thích <mark2>chức năng</mark2> của từng thành phần, lý do nó <mark2>quan trọng</mark2> và tại sao <mark2>sự kết hợp</mark2> như hướng dẫn sẽ hoạt động tốt hơn so với thiết lập "addon đơn lẻ".
 
-## **What is Stremio?**
-* Stremio is a media center that unifies **discovery** and **playback** under one interface. You search for a title once, and Stremio can show you the title page (metadata, seasons, episodes) and the available sources (streams) through addons.
-* The important part is that Stremio is not "*the content source*". Stremio is the **client**. The actual catalogs, metadata, and streams come from the addons you install.
-* Stremio is also **account-based**. Once you configure your setup and then log in on another device, your **addons and library state** are available there too. That is why you typically build the setup once and reuse it everywhere.
+## Stremio là gì?
+* Stremio là ***<mark>một trung tâm giải trí</mark>*** hợp nhất việc khám phá và phát nội dung dưới một giao diện duy nhất. Bạn chọn phim theo poster và Stremio hiển thị thông tin và các nguồn phát có sẵn thông qua các addon.
+* Điểm quan trọng là Stremio <mark2>không lưu trữ video.</mark2> Hãy hình dung nó như <mark2>một cái thùng rỗng,</mark2> các danh sách, thông tin phim và video sẽ là <mark2>cái ruột</mark2> mà bạn cho vào từ <mark2>các addon</mark2> mà bạn cài đặt.
+* Stremio hoạt động dựa trên <mark2>tài khoản.</mark2> Khi bạn hoàn thành việc thiết lập và sau đó đăng nhập trên một thiết bị khác, <mark2>toàn bộ addon và trạng thái thư viện của bạn</mark2> cũng sẽ có sẵn ở đó. Thế nên bạn thường chỉ cần thiết lập <mark2>một lần</mark2> và sử dụng lại ở <mark2>mọi nơi.</mark2>
 
 ## **What platforms does Stremio support?**
 * Windows, macOS, Linux, Android (phones/tablets), Android TV and TV boxes, Web (Stremio Web), and iPhone/iPad (currently via sideloading since it's not on the App Store anymore).
