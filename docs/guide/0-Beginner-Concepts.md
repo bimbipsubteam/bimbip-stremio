@@ -12,138 +12,60 @@ Cẩm nang này giả định bạn đang hướng tới việc thiết lập St
 > * Điểm quan trọng là Stremio **<mark2>không lưu trữ video.</mark2>** Hãy hình dung nó như **<mark2>một cái hộp rỗng,</mark2>** danh sách, thông tin phim và video sẽ là **<mark2>những món đồ</mark2>** mà bạn cho vào từ **<mark2>các addon</mark2>** mà bạn cài đặt.
 > * Stremio hoạt động dựa trên **<mark2>tài khoản.</mark2>** Khi bạn hoàn thành thiết lập rồi đăng nhập trên một thiết bị khác, **<mark2>toàn bộ addon và trạng thái thư viện</mark2>** cũng sẽ có sẵn ở đó. Vậy nên bình thường chỉ cần thiết lập **<mark2>một lần</mark2>** và sử dụng lại ở **<mark2>mọi nơi.</mark2>**
 
-## **Stremio hỗ trợ những nền tảng nào?**
-> * ***<mark>Máy Tính & Laptop:</mark>*** Windows, macOS, Linux
-> * ***<mark>Điện Thoại Thông Minh & Máy Tính Bảng:</mark>*** Android, iOS, iPadOS
-> * ***<mark>TV:</mark>*** Android TV, Google TV, Android TV box, Android box, Fire TV Stick, Samsung TV, LG TV, Sony TV, Philips TV, Hisense TV
-> * ***<mark>VR:</mark>*** Web (Stremio Web), and iPhone/iPad (currently via sideloading since it's not on the App Store anymore).
-* The key point is not just availability. It is that your Stremio account acts as the "anchor" so your setup is portable across devices.
+## **Stremio hỗ trợ những nền tảng/thiết bị nào?**
+> * **<mark>Máy Tính & Laptop:</mark>** Windows, macOS, Linux
+> * **<mark>Điện Thoại Thông Minh & Máy Tính Bảng:</mark>** Android, iOS, iPadOS
+> * **<mark>TV:</mark>** Android TV, Google TV, Android TV Box, Android Box, Fire TV Stick, Samsung TV, LG TV, Sony TV, Philips TV, Hisense TV
+> * **<mark>VR:</mark>** Meta Quest, Pico
+> * **<mark>Thiết bị khác:</mark>** Steam Deck, Raspberry Pi, Máy chiếu & các thiết bị chạy hệ điều hành Android, Trình duyệt web
 
-## **How does Stremio work, conceptually?**
-* Stremio has three practical layers:
-   * **Interface layer**: search, title pages, seasons/episodes, library, continue watching.
-   * **Metadata layer**: posters, descriptions, cast, ratings, episode structure.
-   * **Streams layer**: actual sources you can select and play.
-* The interface is Stremio. The metadata and streams are mostly defined by the addons you choose (e.g. Cinemeta is integrated from the start and is for providing metadata). That is why two people using Stremio can have completely different experiences.
+## **Stremio hoạt động như thế nào?**
+> Stremio gồm 4 thành phần cơ bản nhất:
+  > * **<mark>Giao diện:</mark>** Tìm kiếm, thư viện, lịch chiếu, thông tin, tiếp tục xem,...
+  > * **<mark>Add-on:</mark>** Công cụ liên kết nguồn phát và mở rộng thêm các chức năng khác
+  > * **<mark>Luồng phát:</mark>** Các *"link phim"* được cung cấp cho Stremio
+  > * **<mark>Trình phát:</mark>** Công cụ giải mã video thành hình ảnh, âm thanh, phụ đề
 
-## **What does "synced everywhere" mean in Stremio?**
-* Your Stremio account stores your core setup and usage state. When you sign in on another device, you generally inherit:
-   * **Installed addons**
-   * **Library and watchlist**
-   * **Continue watching / progress inside Stremio**
-* However, "synced" does not guarantee identical playback behavior. Device/platform constraints can matter, especially for torrent playback on some platforms.
+* Giao diện tương tác giữa người dùng và Stremio luôn giống nhau và hiện tại không thể chỉnh sửa. 
+* Thư viện phim và luồng phát được tạo ra từ add-on (ví dụ: Cinemeta là add-on mặc định giúp cung cấp thông tin phim từ IMDb do Stremio phát triển và tích hợp ngay trong phần mềm). 
+* Add-on chính là thứ khiến cho hai người cùng sử dụng Stremio nhưng có thể có những trải nghiệm hoàn toàn khác nhau.
 
-## **What is the addon ecosystem? What do addons actually provide?**
-* Addons are the extension mechanism. They can provide one or more of:
-   * **Catalogs** (home screen rows and curated lists)
-   * **Metadata** (title details, artwork, ratings, episode mapping)
-   * **Streams** (playable links for a title)
-* A basic setup often mixes these responsibilities without control. A strong setup separates concerns: you use dedicated addons for metadata/catalogs, and dedicated addons for stream aggregation and quality control.
+## **"Đồng bộ mọi nơi" trong Stremio nghĩa là gì?**
+> **<mark2>Tài khoản Stremio là "trạm điều khiển" trung tâm.</mark2>** Mọi thiết lập cốt lõi và trạng thái sử dụng của bạn đều được lưu vào đó. Khi đăng nhập trên thiết bị mới, bạn sẽ nhận lại toàn bộ:
+   > * **<mark2>Các add-on đã cài đặt</mark2>**
+   > * **<mark2>Thư viện và danh sách phim muốn xem</mark2>**
+   > * **<mark2>Lịch sử xem tiếp</mark2>**
+* Tuy nhiên, hãy lưu ý: "Đồng bộ" không có nghĩa là mọi thiết bị sẽ phát phim giống hệt nhau. Khả năng phần cứng và nền tảng của từng thiết bị vẫn đóng vai trò quan trọng trong việc phát video.
 
-## **What does "an addon instance" mean?**
-* An addon is the software. An **instance** is a specific hosted deployment of that addon that Stremio communicates with.
-* When you install an addon, you are effectively registering its **instance URL** in your Stremio account. When you browse a title or press play, Stremio queries that instance to retrieve catalogs, metadata, or streams.
-* There can be multiple instances of the same addon hosted by different community providers. They are functionally similar but operationally independent:
-   * Different uptime and performance
-   * Different rate limits and load profiles
-   * Different operational policies (maintenance, scaling, etc.)
-* Important: configuration is not universal across instances. If an addon supports user configuration, that config is tied to the instance and your saved profile there. Switching instances often means reconfiguring or reinstalling via that instance.
+## **Hệ sinh thái add-on là gì và mang lại điều gì?**
+> Add-on chính là **<mark2>"phụ kiện"</mark2>** mở rộng sức mạnh cho Stremio. Mỗi add-on có thể đảm nhận **<mark2>một hoặc nhiều vai trò sau:</mark2>**
+   > * **<mark2>Danh mục:</mark2>** Các hàng phim trên màn hình chính và danh sách được tuyển chọn.
+   > * **<mark2>Dữ liệu:</mark2>** Chi tiết phim, ảnh bìa, xếp hạng, danh sách tập phim.
+   > * **<mark2>Nguồn phát:</mark2>** Các đường link để bạn có thể nhấn "Play" và xem phim.
 
-## **Which addon instance should I choose?**
-* Pick based on reliability first, then performance. If an instance is unstable, your experience will be unstable regardless of how good your configuration is.
-* Use **[this](https://status.stremio-status.com/)** or **[this](https://status.dinsden.top/status/stremio-addons)** link to quickly verify outages and pick alternatives if a popular instance is having issues.
-* In this guide, I link solid default instances, but you should treat them as "recommended", not permanent truths.
+## **"Addon instance" nghĩa là gì?**
+* Hãy hình dung đơn giản add-on là một bịch kẹo, còn instance là nhà máy sản xuất ra cục kẹo đó và giao cho Stremio phát từng viên kẹo cho bạn.
+* Khi cài đặt một add-on, thực chất là bạn đang đăng ký **<mark2>địa chỉ của nó</mark2>** vào tài khoản Stremio. Khi bạn lướt xem phim, Stremio sẽ "hỏi" máy chủ đó để lấy thông tin.
+* Có thể có nhiều instance của cùng một add-on do các bên khác nhau vận hành. Chúng giống nhau về tính năng nhưng khác nhau về "sức khỏe":
+   * **<mark2>Độ ổn định và tốc độ phản hồi khác nhau.</mark2>**
+   * **<mark2>Giới hạn lượt truy cập khác nhau.</mark2>**
+   * **<mark2>Chính sách bảo trì riêng biệt.</mark2>**
+* **<mark>Lưu ý quan trọng:</mark>** Tinh chỉnh không dùng chung giữa các instance. Nếu bạn muốn đổi máy chủ, bạn thường phải thiết lập lại từ đầu nếu add-on đó yêu cầu tinh chỉnh trước khi sử dụng.
 
-## **What is torrenting (P2P), and how does Stremio support it?**
-* Torrenting is **peer-to-peer distribution**. A file is shared by a swarm of peers, and your client downloads pieces from multiple peers in parallel.
-* In Stremio, torrent-based stream addons can return torrent sources. When you select one, playback depends on the availability and health of that swarm.
-* The key tradeoff is reliability. Torrent playback quality is determined by peers. If a torrent has weak or unstable swarm health, buffering and failures are expected.
-* This is why many setups prioritize cached sources (via Debrid) and treat direct P2P as fallback.
+## **Nên chọn máy chủ (instance) nào?**
+* Hãy ưu tiên **<mark2>độ ổn định</mark2>** trước, sau đó mới đến tốc độ. Nếu máy chủ chập chờn, trải nghiệm của bạn sẽ cực kỳ ức chế.
+* Sử dụng **[link này](https://status.stremio-status.com/)** hoặc **[link này](https://status.dinsden.top/status/stremio-addons)** để kiểm tra nhanh xem máy chủ nào đang "sống" hay "ngỏm" để chọn giải pháp thay thế.
+* Trong hướng dẫn của anh bạn mình có cung cấp các địa chỉ máy chủ rất tốt, nhưng hãy coi đó là "gợi ý hàng đầu" chứ không phải là lựa chọn duy nhất mãi mãi.
 
-## **What is a Debrid service, and why do people use it with Stremio?**
-* A Debrid service acts as an intermediate layer that can fetch torrents (and often hoster links) on its own infrastructure, then serve the result to you via standard HTTPS streaming.
-* The practical benefit is caching. If a file is already cached on the Debrid provider, you get fast start times and stable throughput that is not dependent on swarm health.
-* In other words: instead of you relying on random peers, you rely on the Debrid provider's servers. That usually improves consistency significantly.
+## **Tạm kết: Từ lý thuyết đến "Rạp phim tại gia" hoàn hảo**
 
-## **Real-Debrid: what is it, and why would you pick it?**
-* [**Real-Debrid**](http://real-debrid.com/?id=8801126) is one of the most widely used Debrid services and is known for having a very large **cache** (files already on their servers and ready to watch immediately).
-* That "*large cache*" part matters because it often means you will find more sources that start instantly without waiting for anything to download first.
-* Important limitation: Real-Debrid allows **one connection at a time**. That means you cannot watch simultaneously on two or more devices using the same Real-Debrid key. If you do, you can get warnings and risk a ban if it keeps happening.
-* So Real-Debrid is good if you are a **single user** or you know you will not stream in parallel.
+Đến đây, chắc hẳn bạn đã nắm trong tay "bản đồ kiến thức" về hệ sinh thái Stremio. Có thể lúc mới đọc, bạn sẽ thấy hơi choáng ngợp vì "xem phim thôi mà, sao phải rắc rối thế", nhưng đừng quá lo lắng! Hãy coi đây là một khoản "đầu tư" nhỏ về thời gian để đổi lấy một trải nghiệm giải trí không giới hạn về sau.
 
-## **TorBox: what is it, and why would you pick it?**
-* [**TorBox**](https://torbox.app/subscription?referral=4d067ea2-fbc5-4379-85ea-1c413bf54993) is also a Debrid-style service, but it is very practical for **multiple simultaneous streams**.
-* Even the basic paid tier supports **multiple parallel connections** (up to **3** in the Essential tier, and Pro tier up to **10** parallel streams).
-* That matters if you want to use the same API key across **family members**, **friends**, or even **multiple Stremio accounts** streaming at the same time.
-* **Tradeoff**: TorBox may not always have as large an "immediately cached" library as Real-Debrid. If something is not cached yet, you might see sources that require TorBox to fetch it first. In the stream list this shows up as an **hourglass icon**.
-* That does not mean it will not work. It means it may need time to download the file first, and the speed depends on available **seeders**, though it is often reasonably fast. If there's enough seeders, it's a matter of seconds or minutes.
-* In most cases, TorBox still has plenty of cached options. You only need one good cached source per title.
-* Make sure to use my referral code when ordering: ***4d067ea2-fbc5-4379-85ea-1c413bf54993*** to get 7 additional days for each month you buy (only for the first purchase, so I recommend you go big from the start and buy the yearly, it's a better value and you get 84 additional days for free). You can also buy the cheapest tier for a year initially to get the extra 3 months, and if you need a higher tier, you can upgrade along the way, it is possible. You can enter it when choosing the Plan, scroll down to the bottom and there you'll see it.
+> **<mark>Tại sao việc thiết lập kỹ lưỡng lại xứng đáng?</mark>**
+> * **<mark2>Chỉ cần làm một lần:</mark2>** Khi đã cấu hình xong theo đúng ý muốn, mọi chức năng chính sẽ tự động vận hành trơn tru trên tất cả thiết bị của bạn (ngoại trừ phần trình phát nhé).
+> * **<mark2>Sự tự do tuyệt đối:</mark2>** Bạn không còn bị phụ thuộc vào việc phim này có trên app đó hay phim nọ có trên web kia hay không. Cả thế giới điện ảnh giờ đây nằm gọn trong một ứng dụng duy nhất.
+> * **<mark2>Chất lượng đỉnh cao:</mark2>** Thay vì xem những bản nén mờ nhạt, bạn sẽ được thưởng thức những khung hình sắc nét với âm thanh vòm sống động nhất (nếu thiết bị của bạn hỗ trợ đầy đủ nhé).
 
-## **TorBox vs Real-Debrid: how to choose without overthinking it**
-* If you are streaming mostly alone and you want the highest chance of "instant play" from a large cache: **Real-Debrid** is often a strong choice.
-* If you want the same Debrid key to work safely for **multiple people/screens at the same time**: **TorBox** is usually the more practical and economical choice.
-* Both are inexpensive enough that some people treat them like "coverage tools", not an either-or decision.
+Lý thuyết đã xong, giờ là lúc biến những dòng chữ này thành thực tế. Hãy đọc tiếp để bắt đầu xây dựng "đế chế" giải trí của riêng bạn. Một chân trời điện ảnh mượt mà, chuyên nghiệp và "đáng mồ hôi công sức" đang chờ đón bạn phía trước!
 
-## **Why use both TorBox and Real-Debrid together?**
-* Because they complement each other:
-   * TorBox gives you **safe parallel streaming** (family-friendly) as a main provider.
-   * Real-Debrid can act as a **backup cache** in case it has a source cached that TorBox does not have immediately.
-* This is exactly how I use them: **TorBox as my main**, because my family can stream simultaneously, and **Real-Debrid as a backup**, because of its potentially larger cache.
-* Important: if you use Real-Debrid as a backup, remember its **one-connection** rule. Keep it as a fallback, not something multiple people stream from at the same time.
-
-## **How do you actually use both in this setup?**
-* In **AIOStreams**, you can add **multiple Debrid services** at the same time.
-* That means your stream list can include cached results from both providers, increasing the chance that at least one provider has a fast, stable source available right now.
-
-## **What is Trakt, and why do people connect it to Stremio?**
-* Trakt is a watch-state and history platform. It stores what you watched, where you stopped, and can keep progress consistent across devices and apps.
-* In Stremio setups, Trakt is mainly used for:
-   * **Progress syncing** across devices
-   * **Library enrichment** (depending on the addon workflow)
-   * **Recommendation-style catalogs** when an addon uses your Trakt data
-
-## **What are scrapers, and why do you need multiple?**
-* A scraper is an addon that searches one or more indexes/providers and returns stream candidates for a title.
-* No scraper has perfect coverage. They differ by what they index, how they prioritize results, and how reliably they respond.
-* Using multiple scrapers increases:
-   * **Coverage** (more total candidates)
-   * **Quality diversity** (more release groups, encodes, sources)
-   * **Resilience** (one scraper can be down without killing your results)
-
-## **What does AIOStreams do, and why is it the center of this setup?**
-* AIOStreams is a stream aggregation and normalization layer. It pulls results from multiple scrapers and presents them as a single, consistent stream list.
-* More importantly, it lets you control behavior that basic setups lack:
-   * **Filtering** (remove junk, enforce language preferences, remove unwanted formats)
-   * **Sorting** (cached-first, quality-first, reliability-first, or scoring-based)
-   * **Formatting** (make the stream list readable and informative)
-* This is how you avoid the classic Stremio problem where the stream list is a noisy mix of inconsistent labels and unreliable ordering.
-
-## **What does AIOMetadata do, and why include it?**
-* AIOMetadata is a metadata and catalog layer that gives you more control over what appears in Stremio's browsing experience.
-* It can provide alternative metadata sources, richer artwork handling, and additional catalogs (including anime-focused flows depending on configuration).
-* In practice: AIOStreams fixes the stream list, AIOMetadata improves the browsing layer and catalog structure.
-
-## **What is Cinemeta, and why do people say AIOMetadata can replace it?**
-* Cinemeta is Stremio's default metadata provider and it cannot be removed.
-* "Replace" in practice means you keep Cinemeta installed, but you rely primarily on AIOMetadata catalogs/metadata for browsing. Cinemeta becomes the fallback, not the main layer.
-
-## **What does Watchly do, and why is it good in this setup?**
-* Watchly focuses on recommendations and discovery. It generates catalogs that feel closer to a personalized "what should I watch next" flow.
-* It pairs well with AIOMetadata because it adds recommendation-driven catalogs, while AIOMetadata can cover broader metadata/catalog needs. Watchly also uses the metadata provided by AIOMetadata if the setup in this guide is followed, ensuring consistency throughout addons.
-
-## **What are TMDB, TVDB, and RPDB, and why do they matter here?**
-* These are external data sources that addons commonly use:
-   * **TMDB**: IDs + metadata backbone for many movie/TV flows
-   * **TVDB**: alternative metadata source focused (and recommended) on episode/series
-   * **RPDB**: artwork/poster overlays (especially ratings overlays)
-* They matter because correct IDs and high-quality metadata are what make catalogs accurate and browsing consistent. RPDB matters mainly for better looking posters with embedded rating context.
-
-## **What is an API key, in plain English?**
-* An API key is a credential that lets a service identify you and authorize requests. Many metadata and artwork providers require it to prevent abuse and apply usage limits.
-
-## **What is a Gemini API key, what does it do, and why might it appear in Stremio-related setups?**
-* A **Gemini** API key authorizes requests to Google's Gemini models.
-* In this ecosystem, it is typically relevant when a tool/addon has AI-assisted features (specifically for AI-powered search through AIOMetadata).
-
-
+**<mark>Chúc bạn có được những giờ phút xem phim thật bùng nổ 🤩</mark>**
