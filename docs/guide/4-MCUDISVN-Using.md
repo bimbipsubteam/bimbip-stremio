@@ -3,60 +3,63 @@ layout: guide
 title: "🔎 4. Quả Cầu Thấu Thị"
 ---
 
-# 🔎 4. Quả Cầu Thấu Thị
+# 🔎 4. VẬN HÀNH "CỖ MÁY" MCUDISVN ADDON
 
-**AIOMetadata** is the metadata and catalogs layer. It improves discovery by powering richer catalogs, search behavior, and integrations, so browsing titles in Stremio feels more complete and organized.
+Chào mừng trở lại với ***<mark>Dòng Thời Gian Thiêng Liêng MCUDISVN</mark>***. Để bạn không bị "lạc lối" trong thực tại này, đây là bản hướng dẫn chi tiết về cách thức vận hành, các tính năng thông minh và cách xử lý sự cố của **<mark>ADDON MCUDISVN</mark>**
 
-Select an **AIOMetadata** instance from [**this**](https://status.stremio-status.com/) or [**this**](https://status.dinsden.top/status/stremio-addons) link (they both show the same instances and their online status, it's just two different sources) and:
+## I. 🗺️ TÌM PHIM
 
->**WARNING:**
->* *If you want to understand more what an instance means, go to* [**🔰 Beginner Concepts**](0-Beginner-Concepts.md#what-does-an-addon-instance-mean).
->* *[**Viren's**](https://aiometadata.viren070.me/) or [**Midnight's**](https://aiometadatafortheweebs.midnightignite.me/) are some of the most popular, so you can open these links directly, but almost all are viable options.*
->* *Choose one of the instances and stick with it, you will store your configuration here, and if you change to the other instance, you'll need to transfer your configuration because it's not automatically transferred.*
->* *You can keep the monitoring links above for later to check the instance online status, if it happens that it's not working and might be temporarily down.*
+>* Xem phim với Stremio vô cùng đơn giản, bạn chỉ cần **<mark2>bấm vào poster</mark2>** của phim bạn muốn xem, hệ thống sẽ tự động tìm file trong Drive và gửi về cho bạn.
+>* Trên màn hình chính của Stremio luôn có sẵn poster của phim trong các danh mục mặc định hoặc cài đặt thêm cho bạn lựa chọn ngay.
 
-1. Download my configuration file [**here**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOMetadata.json) (right-click, "*Save As*", and save it as `.json`, not `.txt`).
-2. Go to the "**Configuration**" tab, click on "**Import Configuration**", and load my configuration file.
+### Cách A: Tìm kiếm qua thanh Search
+1. Gõ tên phim bạn muốn xem vào thanh tìm kiếm của Stremio (VD: *Avengers: Endgame*).
+2. Chọn phim từ kết quả của các danh mục. *Khi bạn cài đặt nhiều danh mục, tất cả đều sẽ hiện ra nếu tìm thấy phim, bạn chọn cái nào cũng được.*
+4. Đợi vài giây để "cỗ máy" quét sạch Drive và hiện danh sách luồng phát của **<mark2>MCUDISVN</mark2>**. *Khi bạn cài đặt nhiều addon tạo luồng phát, hãy chọn cái có tên MCUDISVN.*
 
-   ![Import Configuration](../images/4.2.png)
+### Cách B: Duyệt qua "Danh mục phim" (Catalogs)
+Nếu bạn chưa biết xem gì, hãy vào mục **<mark2>Discover</mark2>** (Khám phá) trong Stremio:
+*   **<mark2>Chọn loại Movie</mark2>**
+*   **<mark2>Chọn danh mục Google Drive:</mark2>** Hiện các file vừa mới thêm vào Drive.
+*   **<mark2>Cách trên cũng áp dụng cho các danh mục khác, mời bạn tự khám phá</mark2>**
 
-3. Go to the "**Integrations**" tab, and enter the API keys for Gemini, TMDB, TheTVDB, RPDB.
-   * *For **RPDB**, unless you have an account and a paid subscription with your own API key, you can also use the free standard API Key "t0-free-rpdb" directly.*
+### Cách C: Tìm file cụ thể trong Drive (không qua poster)
+Nếu bạn bấm vào một phim nào đó nhưng hiện dòng chữ **<mark2>No streams found</mark2>** thì có 2 nguyên nhân: **<mark2>Tên file không khớp với hệ thống lọc</mark2>** hoặc/và **<mark2>phim không có trong Drive.</mark2>** *Đây là lỗi thường gặp với Anime*, khi đó hãy thử các cách sau:
+*   **<mark2>Gõ tên phim,</mark2>** sau đó lướt xuống tìm danh mục **<mark2>Google Drive Search</mark2>**
+*   **<mark2>Bấm See All</mark2>** và tìm file bạn cần. *Bấm vào từng file để hiện đầy đủ tên.*
+*   **<mark2>Mẹo nhỏ:</mark2>** Tên càng chi tiết thì tìm càng nhanh.
 
-   ![API Keys](../images/4.3.png)
+## II. 🎞️ Đọc thông số Luồng phát
+Khi danh sách luồng phát hiện ra, mỗi "ô phim" sẽ chứa các thông tin quan trọng. Hãy đọc kỹ trước khi nhấn Play:
 
-4. Go to the "**Catalogs**" tab, and near the "Quick Add" button, you will see the **Trakt** icon. Click on it and follow the steps to connect your Trakt account.
+### 1. Thông tin chung (bên phải)
+>*   **<mark>MCUDISVN:</mark>** Tên của addon tạo luồng phát.
+>*   **<mark>🚀 Direct:</mark>** Lấy file trực tiếp từ Google. Dành cho Windows, macOS, TV có hỗ trợ.
+>*   **<mark>📱 Proxy:</mark>** Dành cho iPhone, iPad, TV kén định dạng. Video đi qua "cổng phụ" để đảm bảo phát được.
+>*   **<mark>2160p, 1080p, 720p, 480p, Unknown:</mark>** Độ phân giải của video (2160p là 4KKKK). Unknown là khi tên file không ghi độ phân giải.
 
-   ![Trakt Integration](../images/4.4.png)
+### 2. Mô tả kỹ thuật (bên trái)
+>*   **<mark>🎥 Chất Lượng:</mark>** BluRay (lấy từ đĩa phim), WEB-DL (lấy từ nền tảng trực tuyến). Thường thì BluRay>WEB-DL
+>*   **<mark>📺 Hình Ảnh:</mark>** DV, HDR (Chỉ dành cho thiết bị "xịn"); AI (thường gặp với Anime, nâng độ phân giải bằng AI)
+>*   **<mark>🎧 Âm Thanh:</mark>** Định dạng âm thanh và cấu hình kênh. Nếu thấy E-AC3, DTS, TrueHD hoặc 5.1, 7.1, thì một số thiết bị sẽ không có tiếng.
+>*   **<mark>📦 Dung Lượng:</mark>** Càng nặng load càng lâu, 4K nên có mạng mạnh, 1080p phù hợp tốc độ mạng bình thường.
+>*   **<mark>📄 Tên File:</mark>** Rê chuột vào sẽ hiện tên đầy đủ.
 
-   * *If you want some ready-to-use and well-maintained lists, while on the Trakt tab, search for the lists from user "snoak", and you will be able to import a lot of interesting lists. I have already included some of them in the catalog, but you can add more.*
-   * **For Anime users**: *If you want to enable search for Anime, make sure to go to to the "Search" tab and enable both "Anime Search Engine" switches.*
+## III. 🍿 Chọn phim
+* Hệ thống tự động xếp thứ tự chất lượng từ cao xuống thấp.
+* Hệ thống tự động hiện link Direct và Proxy tùy thiết bị, vẫn là 1 file đó, chỉ khác cách phân phối.
+* Nếu thiết bị của bạn có phần cứng tốt, mạng nhanh, màn to, loa xịn thì cứ chọn bất cứ gì bạn thích.
+* Nếu xem trên màn hình nhỏ hoặc mạng yếu/chậm/cà giựt thì 1080p là đủ.
+* **<mark2>Lưu ý 1:</mark2>** Độ phân giải không tỷ lệ thuận với chất lượng hình ảnh. Bitrate mới là yếu tố then chốt quyết định chất lượng. Hiểu nôm na thì bitrate cao = video đẹp hơn = file nặng hơn. Vậy nên nếu gặp các file có cùng độ phân giải thì file có dung lượng cao hơn *thường* sẽ đẹp hơn.
+* **<mark2>Lưu ý 2:</mark2>** Còn nhiều thứ để nói về cái này nữa nhưng để ở đây thì dài dòng, mời bạn ghé qua [🧿 Điện Thờ Hiền Triết](guide/7-Additional-Stuff.md)
 
-   ![Anime Search](../images/4.4.2.png)
+## IV. 💬 Chọn Phụ Đề
+Sau khi phim đã chạy, nếu không có phụ đề tiếng Việt tự động:
+1. Nhấn vào biểu tượng **<mark2>Phụ đề (CC)</mark2>** trên trình phát Stremio.
+2. Tìm các nhãn có chữ:
+    *   **`[Vie]`** hoặc **`[Tiếng Việt]`**: Phụ đề tiếng Việt có tag "vie" trong tên file.
+    *   **`[V1E]`** hoặc **`[MCUDISVN]`**: Phụ đề tiếng Việt chưa có tag "vie" trong tên file.
+3. **<mark2>Mẹo nhỏ:</mark2>** Bạn có thể cài đặt thêm addon phụ đề được giới thiệu trong [💎 5. Thần Chú Sung Túc](guide/5-Addon-Expanding.md)
 
-   * **For other languages**: *If you want the metadata (descriptions, titles, etc.) to show in a different language than English, go to the "General" tab and change the "Display Language".*
-
-   ![Display Language](../images/4.4.3.png)
-
-   * **NOTES**: 
-      * *If you encounter any issues with Trakt integration on AIOMetadata, it's probably because Trakt is rate limiting the instance you're using, or the instance provider has disabled it (if it says "Instance owner has not yet set up the Trakt integration."). In that case, try to do the AIOMetadata setup with another instance.*
-      * *Alternatively, you can leave Trakt integration disabled, and hide the Trakt catalogs on the list (marked with a red **Trakt** tag on the right) by clicking the green eye icon for each. I know it's not ideal since you created a Trakt account already, but there's nothing we can do about it. You can still add other catalogs from the other sources there.*
-      * *There are also good alternatives to Trakt if you disable it, both for watch history tracking, and curated catalogs, which you can check out in [**🛠️ Additional Stuff**](7-Additional-Stuff.md#enriching-your-catalogs-trakt-alternatives).*
-
-   ![Trakt Disable](../images/4.4.1.png)
-
-
-5. **Optional**: At this point AIOMetadata is ready, but you can keep configuring it however you like, but otherwise the configuration I provided is ready to be used. On the "**Catalogs**" tab you can add, remove, enable, disable catalogs depending on your preferences.
-6. Go to the "**Configuration**" tab again and click on "**Save Configuration**".
-   * **ALWAYS SAVE IN THIS TAB EVERY TIME YOU MAKE CHANGES LATER.**
-   * *Copy and store the **UUID** that is shown and the **Password** you set for later to access the configuration again. This is basically your AIOMetadata account.*
-7. Click "**Install**" and install the addon on **Stremio Web** (recommended, but you can also install on Stremio app if you want, but make sure you're signed in to your Stremio account wherever you install it).
-   * *If you get a "AddonsPushedToAPI Max descriptor size reached" error when installing, you probably have too many catalogs on AIOMetadata. Disable some, save the configuration, and try to install it again.*
-   * *If you didn't want to get an API key for Gemini, go to the **Search** tab and disable **AI-Powered Search** to be able to save.*
-
-   ![Install Addon](../images/4.7.png)
-
->**NOTES FOR LATER:**
->* *Keep in mind for later that if you change catalog structure in AIOMetadata after you installed it on Stremio, or if you add the CouchMoney lists from Step 6 below, then go to Cinebye, authenticate again with Stremio credentials, and click the **Refresh** icon to the right of AIOMetadata in the "**Manage Addons**" section.*
->![Refresh Addons](../images/5.6.png)
+**<mark>MCUDISVN FOREVER! 🛡️🍿</mark>**
 
