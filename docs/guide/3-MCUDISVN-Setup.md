@@ -19,7 +19,7 @@ Chào mừng bạn đã đến với **<mark>Cổng Dòng Thời Gian Thiêng Li
 2. Tại giao diện **<mark2>JARVIS cần quét danh tính,</mark2>** nhập chính xác địa chỉ Email đã đăng ký với TVA.
 3. Nhấn nút **<mark2>MCUDISVN FOREVER!</mark2>**.
 
-> **<mark2>Lưu ý:</mark2>** Nếu bạn nhận thông báo **<mark2>"Truy cập bị từ chối - Biến thể",</mark2>** nghĩa là Email của bạn chưa có trong hệ thống. Hãy liên hệ TVA để được cấp quyền.
+> **<mark2>Lưu ý:</mark2>** Nếu bạn nhận thông báo **<mark2>“Truy cập bị từ chối - Biến thể",</mark2>** nghĩa là Email của bạn chưa có trong hệ thống. Hãy liên hệ TVA để được cấp quyền.
 
 ### Bước 2: Xác thực 2 lớp
 Để bảo vệ quyền riêng tư và chống biến thể xâm nhập, bạn sẽ đi qua 2 lần xác thực:
