@@ -57,7 +57,7 @@ Tất nhiên rồi, phải bắt đầu bằng việc tạo một tài khoản [
    * h. Nhập lại mã **<mark2>API Key</mark2>** vào đó một lần nữa.
    * i. Nhấn **<mark2>Save & Close</mark2>**, sắp xếp lại vị trí các danh mục theo ý thích, và đừng quên nhấn **<mark2>Save</mark2>** ở tab **<mark2>Configuration</mark2>** để lưu lại toàn bộ thay đổi.
 
-![MDBList](../images/7.1.png)
+   ![MDBList](../images/7.1.png)
 
 6. **<mark>Simkl</mark>**: Trải nghiệm tương tự Trakt nhưng linh hoạt hơn trong việc quản lý lịch sử xem.
    * *Bạn có thể dùng song song với Trakt để tối ưu hóa sở thích cá nhân.*
@@ -70,4 +70,4 @@ Tất nhiên rồi, phải bắt đầu bằng việc tạo một tài khoản [
    * g. Bạn có thể thêm bất kỳ danh mục phim nào mình thích ngay tại trang đó, sau đó nhấn **<mark2>Close</mark2>**.
    * h. Sắp xếp lại thứ tự các danh mục mới và đừng quên nhấn **<mark2>Save</mark2>** ở tab **<mark2>Configuration</mark2>** để hoàn tất.
 
-![Simkl](../images/7.2.png)
+   ![Simkl](../images/7.2.png)
