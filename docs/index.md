@@ -31,7 +31,7 @@ Nếu bạn đang phân vân liệu nó có xứng đáng với thời gian bỏ
 - [⚙️ 2. Cấm Vật Tiền Nhân](guide/2-Stremio-Initialization.md)
 - [🗝️ 3. Chìa Khóa Tinh Vân](guide/3-MCUDISVN-Setup.md)
 - [🔎 4. Quả Cầu Thấu Thị](guide/4-AIOMetadata-Setup.md)
-- [💎 5. Thần Chú Sung Túc](guide/5-MCUDISVN-Using.md)
+- [💎 5. Thần Chú Sung Túc](guide/5-Addon-Expanding.md)
 - [🤖 6. Thực Thể Giả Kim](guide/6-Personalized-Lists.md)
 - [🧿 Điện Thờ Hiền Triết](guide/7-Additional-Stuff.md)
 - [❓ Ngọn Đồi Toàn Tri](guide/8-Configuration-QA.md)
