@@ -8,7 +8,7 @@ title: "🗝️ 3. Chìa Khóa Tinh Vân"
 Chào mừng bạn đã đến với **<mark>Cổng Dòng Thời Gian Thiêng Liêng</mark>** của **<mark>MCUDISVN & BimBip Subteam</mark>**. Đây là hệ thống giúp bạn kết nối Google Drive vào ứng dụng Stremio một cách bảo mật và mượt mà.
 
 ## 🛠 Yêu cầu chuẩn bị
->**<mark>1. Tài khoản Stremio</mark>** 
+>**<mark>1. Tài khoản Stremio</mark>** \
 >**<mark>2. Email được cấp phép:</mark>** Email sử dụng addon và Drive của bạn phải nằm trong danh sách cho phép của **<mark2>TVA (Quản trị viên MCUDISVN)</mark2>**. Nếu chưa có, hãy liên hệ để đăng ký.
 >**<mark>3. Trình duyệt web hoặc phần mềm:</mark>** Mở trên máy tính hoặc điện thoại để thực hiện đăng nhập.
 
