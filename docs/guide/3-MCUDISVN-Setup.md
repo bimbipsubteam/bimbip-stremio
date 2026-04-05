@@ -9,7 +9,7 @@ Chào mừng bạn đã đến với **<mark>Cổng Dòng Thời Gian Thiêng Li
 
 ## 🛠 Yêu cầu chuẩn bị
 >**<mark>1. Tài khoản Stremio</mark>** \
->**<mark>2. Email được cấp phép:</mark>** Email sử dụng addon và Drive của bạn phải nằm trong danh sách cho phép của **<mark2>TVA (Quản trị viên MCUDISVN)</mark2>**. Nếu chưa có, hãy liên hệ để đăng ký.
+>**<mark>2. Email được cấp phép:</mark>** Email sử dụng addon và Drive của bạn phải nằm trong danh sách cho phép của **<mark2>TVA (Quản trị viên MCUDISVN)</mark2>**. Nếu chưa có, hãy liên hệ để đăng ký. \
 >**<mark>3. Trình duyệt web hoặc phần mềm:</mark>** Mở trên máy tính hoặc điện thoại để thực hiện đăng nhập.
 
 ## 🚀 Quy trình 3 bước cài đặt
@@ -23,8 +23,8 @@ Chào mừng bạn đã đến với **<mark>Cổng Dòng Thời Gian Thiêng Li
 
 ### Bước 2: Xác thực 2 lớp
 Để bảo vệ quyền riêng tư và chống biến thể xâm nhập, bạn sẽ đi qua 2 lần xác thực:
->**<mark>1. Xác thực danh tính:</mark>** Đăng nhập vào tài khoản Google để hệ thống kiểm tra bạn có đúng là chủ nhân của Email đó không.
->**<mark>2. Xác minh ứng dụng:</mark>** Khi gặp thông báo **<mark2>"Google chưa xác minh ứng dụng này",</mark2>** hãy bấm Nâng cao và chọn Đi tới link cài đặt
+>**<mark>1. Xác thực danh tính:</mark>** Đăng nhập vào tài khoản Google để hệ thống kiểm tra bạn có đúng là chủ nhân của Email đó không. \
+>**<mark>2. Xác minh ứng dụng:</mark>** Khi gặp thông báo **<mark2>"Google chưa xác minh ứng dụng này",</mark2>** hãy bấm **<mark2>Nâng cao</mark2>** và chọn **<mark2>Đi tới link cài đặt</mark2>** \
 >**<mark>3. Cấp quyền Drive:</mark>** Sau khi xác thực danh tính xong, hệ thống sẽ yêu cầu quyền **<mark2>"Xem các tệp trên Google Drive"</mark2>**. Bạn cần nhấn **<mark2>Cho phép</mark2>** để addon đọc và phát phim cho bạn trên Stremio.
 
 ### Bước 3: Nhận Link và Cài đặt
