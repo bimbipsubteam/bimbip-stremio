@@ -3,97 +3,47 @@ layout: guide
 title: "🗝️ 3. Chìa Khóa Tinh Vân"
 ---
 
-# 🗝️ 3. Chìa Khóa Tinh Vân
+# 🗝️ 3. HƯỚNG DẪN CÀI ĐẶT ADDON STREMIO GDRIVE - MCUDISVN
 
-**AIOStreams** is the stream aggregation engine in this setup. It combines multiple scraping sources into one consistent results list, and lets you apply filtering, sorting, and formatting so the best links appear first.
+Chào mừng bạn đã đến với **<mark>Cổng Dòng Thời Gian Thiêng Liêng</mark>** của **<mark>MCUDISVN & BimBip Subteam</mark>**. Đây là hệ thống giúp bạn kết nối Google Drive vào ứng dụng Stremio một cách bảo mật và mượt mà.
 
-Select an **AIOStreams** instance from [**this**](https://status.stremio-status.com/) or [**this**](https://status.dinsden.top/status/stremio-addons) link (they both show the same instances and their online status, it's just two different sources) and:
+## 🛠 Yêu cầu chuẩn bị
+>**<mark>1. Tài khoản Stremio</mark>** 
+>**<mark>2. Email được cấp phép:</mark>** Email sử dụng addon và Drive của bạn phải nằm trong danh sách cho phép của **<mark2>TVA (Quản trị viên MCUDISVN)</mark2>**. Nếu chưa có, hãy liên hệ để đăng ký.
+>**<mark>3. Trình duyệt web hoặc phần mềm:</mark>** Mở trên máy tính hoặc điện thoại để thực hiện đăng nhập.
 
->**WARNING:**
->* *If you want to understand more what an instance means, go to* [**🔰 Beginner Concepts**](0-Beginner-Concepts.md#what-does-an-addon-instance-mean).
->* *[**Midnight's**](https://aiostreamsfortheweebsstable.midnightignite.me/) or [**Yeb's/Nhyira**](https://aiostreams.fortheweak.cloud/) are some of the most popular, so you can open these links directly, but almost all are viable options.*
->* *You can choose an instance that says **Nightly**, and they work great, but they are instances that update very frequently and thus the steps described in this guide may not be up to date to match them. If you're a total beginner, you're probably better off with an instance that doesn't say **Nightly**.*
->* ***DON'T** choose the **ElfHosted** instance because Torrentio doesn't work there.*
->* *Choose one of the instances and stick with it, you will store your configuration here, and if you change to the other instance, you'll need to transfer your configuration because it's not automatically transferred*
->* *You can keep the monitoring links above for later to check the instance online status, if it happens that it's not working and might be temporarily down.*
+## 🚀 Quy trình 3 bước cài đặt
 
-1. Select "**Advanced**" on the welcome screen if it shows up.
-2. Copy [**this**](https://raw.githubusercontent.com/luckynumb3rs/stremio-perfect-setup/refs/heads/main/templates/AIOStreams.json) link (right-click and "*Copy link address*").
-3. Go to the "**Save & Install**" tab on AIOStreams (sidebar menu on the left), click "**Import**", "**Import Template**", paste the link you copied and click on "**Go**".
+### Bước 1: Quét danh tính tại Cổng Đăng Nhập
+1. Truy cập vào link được cấp khi đăng ký.
+2. Tại giao diện **<mark2>JARVIS cần quét danh tính,</mark2>** nhập chính xác địa chỉ Email đã đăng ký với TVA.
+3. Nhấn nút **<mark2>MCUDISVN FOREVER!</mark2>**.
 
-   ![Import Template](../images/3.3.png)
+> **<mark2>Lưu ý:</mark2>** Nếu bạn nhận thông báo **<mark2>"Truy cập bị từ chối - Biến thể",</mark2>** nghĩa là Email của bạn chưa có trong hệ thống. Hãy liên hệ TVA để được cấp quyền.
 
-4. Click "**Use this Template Now**".
+### Bước 2: Xác thực 2 lớp
+Để bảo vệ quyền riêng tư và chống biến thể xâm nhập, bạn sẽ đi qua 2 lần xác thực:
+>**<mark>1. Xác thực danh tính:</mark>** Đăng nhập vào tài khoản Google để hệ thống kiểm tra bạn có đúng là chủ nhân của Email đó không.
+>**<mark>2. Xác minh ứng dụng:</mark>** Khi gặp thông báo **<mark2>"Google chưa xác minh ứng dụng này",</mark2>** hãy bấm Nâng cao và chọn Đi tới link cài đặt
+>**<mark>3. Cấp quyền Drive:</mark>** Sau khi xác thực danh tính xong, hệ thống sẽ yêu cầu quyền **<mark2>"Xem các tệp trên Google Drive"</mark2>**. Bạn cần nhấn **<mark2>Cho phép</mark2>** để addon đọc và phát phim cho bạn trên Stremio.
 
-   ![Use Template](../images/3.4.png)
+### Bước 3: Nhận Link và Cài đặt
+Sau khi cấp quyền thành công, giao diện **<mark>"Kết Nối Thành Công"</mark>** sẽ hiện ra:
+* **<mark2>Cách 1 (dùng phần mềm):</mark2>** Nhấn nút **<mark2>🚀 CÀI ĐẶT VÀO STREMIO</mark2>**. Hệ thống sẽ tự động mở ứng dụng Stremio và hiện bảng cài đặt Addon.
+* **<mark2>Cách 2 (dùng trang web):</mark2>** Nhấn nút **<mark2>📋 Copy</mark2>** để sao chép đường link JSON. Sau đó mở Stremio -> Vào mục Addon -> Nhấn "Add Addon" -> Dán link và nhấn Add.
 
-5. On the "**Select Services**" page that is shown, enable the services you want to use and click "**Next**". If you're not using any services and want to proceed with the **P2P/HTTP** setup, click "**Skip**".
+## ⚠️ Những lưu ý quan trọng (Đọc kỹ để tránh bị "Hủy diệt")
 
-   ![Select Services](../images/3.5.png)
+**<mark>1. Thời hạn phiên đăng nhập:</mark>**
+   * Addon này có hiệu lực theo **<mark2>thời hạn đăng ký</mark2>**. Sau thời gian này, bạn cần gia hạn và truy cập lại cổng web để tạo link mới.
+   * Khi hết bạn, hệ thống sẽ tự động vô hiệu hóa Email của bạn. **<mark2>"Dòng thời gian"</mark2>** của addon sẽ ngay lập tức bị xóa bỏ.
 
-6. On the "**Template Options**" page, you'll be able to personalize the configuration to match your preferences:
-   * **🖋️ Formatter Style**: Here you can choose the formatting of the stream information view.
-      * **▶︎ *Flat Monochrome Icons*** has a cleaner look based on minimalistic white icons.
-      * **🎬 *Colorful Icons*** contains a colored version with more graphical icons.
-      * **🚫 *None*** retains your existing formatter (formatter will not be replaced, if you already have one configured).
-   * **🗣️ Language Options**:
-      * **🔊 Preferred Languages**: Here you can select your preferred stream languages that you want to be sorted first when the streaming options are shown. *Original, Dual Audio, Multi, Dubbed, and Unknown* are automatically appended after your selections.
-      * **🔒 Show Only Preferred Languages**: You can enable this option (recommended) to show only streams in the selected languages above (including *Original, Dual Audio, Multi, Dubbed, and Unknown*). This can help reduce clutter by filtering out streams in languages you don't prefer.
-      * **💬 Preferred Subtitles**: Here you can select the subtitles that should be loaded when opening a stream.
-   * **🧩 Addon Options**:
-      * **🗡️ Anime Addons** (*not available without Debrid*): If enabled, additional anime-specific addons (SeaDex, AnimeTosho) will be installed.
-      * **🧊 Debridio** (*not available without Debrid*): If enabled, [Debridio](https://debridio.com) will be added. You will need your *Debridio API key* from your account settings. Leave it disabled if you don't know what this is.
-      * **🌐 HTTP Addons**: Select if you want addons for **HTTP** streams to be installed. These addons rely on free online hosters and generally have less reliable sources and speeds, but can be good backup options if you don't or can't use Debrid and/or P2P. You can select:
-         * **🚫 *None*** to not include any HTTP addons at all.
-         * **➕ *Install Additional HTTP Addons*** to install them in addition to the Debrid/P2P addons for extra results.
-         * **🔒 *Install Only HTTP Addons*** to not include any Debrid/P2P addons but only use HTTP addons, if P2P is an issue for you or you can't/don't use Debrid. If you only use these addons, it might be a good idea to increase the global timeout below, since they might sometimes take longer to return results. *Do not select this option if you are using a Debrid.*
-      * **⏱️ Global Timeout**: Enter the time in ms that you're willing to wait for results before your scraper addons timeout. You can set it a bit higher if you have issues getting enough results or you want to make sure to get as many results as possible.
-   * **↕️ Sorting Options**:
-      * **🚩️ Language Priority**: This option can give priority to streams in your preferred languages by moving it up the sorting order. If you struggle to see your preferred languages in the results, even after adding it to the **Preferred Languages** list, try increasing the priority here. May rank lower-quality streams higher if your preferred languages are uncommon among the results, so use with caution.
-      * **🌱 Seeders Priority** (*only for P2P*): Change this if you want highest seeders to be prioritized more on the sorting order, even if they have lower Resolution/Quality/SEL Scores. In most cases, low seeders will have already been filtered out by the internal filtering (SEL).
+**<mark>2. Quy tắc "Không chia sẻ":</mark>**
+   * ***<mark2>TUYỆT ĐỐI KHÔNG</mark2>*** chia sẻ đường link addon cho bất kỳ ai.
+   * Mỗi link gắn liền với Google Drive của bạn. Chia sẻ link có thể dẫn đến việc rò rỉ quyền truy cập và biến thể sử dụng hết lưu lượng Drive của bạn.
+   * Nếu TVA phát hiện hoạt động bất thường, **<mark2>"Dòng thời gian"</mark2>** của addon sẽ ngay lập tức bị xóa bỏ.
 
-   ![Template Options](../images/3.6.png)
+## 💖 Nhắn nhủ
+Addon được phát triển bởi ***<mark>MCUDISVN & BimBip Subteam</mark>*** với tất cả tâm huyết. Chúc bạn có những giây phút xem phim tuyệt vời nhất trong thực tại này!
 
-7. On the "**Enter Credentials**" page, enter all API keys you prepared earlier.
-   * For **RPDB**, unless you have an account and a paid subscription with your own API key, you can also use the free standard API Key "*t0-free-rpdb*" directly.
-8. Click on "**Load Template**".
-
-   ![Load Template](../images/3.8.png)
-
-9. **Optional**: At this point AIOStreams is ready, but you can keep configuring it however you like. For example, if you want to further configure the scrapers or subtitle languages, you can go to the "**Installed Addons**" tab.
-   * *You can configure each of them with the Pencil button on the right if needed.*
-   * Depending on what you selected during the template options (whether you used a Debrid service, P2P directly, or can't use either), different addons got installed for you. Here's a summary:
-      1. **TorBox, Torrentio, Meteor, Comet, StremThru, MediaFusion, Knaben, PeerFlix** are the ***main scrapers*** finding the sources.
-      2. **SeaDex and AnimeTosho** are ***for Anime*** and are available only when using a Debrid service.
-      3. **Nuvio Streams, WebStreamr, Sootio** are ***HTTP scrapers*** that provide direct web streams. You can use these ***if you don't/can't use Debrid and/or torrents***. They may be more limited in quality and availability, but are a good alternative. You can also disable them if you use a Debrid, you don't normally need them.
-      4. **Debridio** and **Watchtower** are additional scrapers for those of you who use the ***Debridio*** service.
-      5. **Library** is an addon that can search through your own Debrid library (if you e.g. download something manually in Debrid).
-      6. **SubHero** is ***for the subtitles***, you can edit the languages and any other subtitle preferences here.
-
-   ![Addon Configuration](../images/3.9.1.png)
-
-   * *If you want to fine-tune how languages shound show on the results list, go to **Filters** tab, then **Language**, and add/remove your languages to the **Preferred Languages** list, and arrange them in the **Preference Order** list (shown in the picture with German language as an example). You can also add the languages in the **Required Languages** if you want to ONLY show streams in that language, but keep in mind that streams that might have no language tags at all or tagged as "multi" will be filtered out.*
-
-   ![Preferred Language](../images/3.9.2.png)
-
-   * *If you want to take it a step further and totally prioritize your language, even before Quality and Resolution, then go to the **Sorting** tab, make sure you're in the **Global** tab, and on the **Split by Cache** section, move **Language** to the top or wherever you want to have it for both the **Cached Streams** and **Uncached Streams** lists.*
-
-      ![Sorting Language](../images/3.9.3.png)
-
-10. Go to the "**Save & Install**" tab, enter a password on the "**Create Configuration**" section, and click "**Create**".
-   * **ALWAYS SAVE IN THIS TAB EVERY TIME YOU MAKE CHANGES LATER.**
-   * *Copy and store the **UUID** that is shown and the **Password** you set for later to access the configuration again. This is basically your AIOStreams account.*
-   * *If you get an error when saving that says "Failed to fetch manifest..." and/or "502 - Bad Gateway", it means the addons mentioned there are temporarily offline. Go to **Addons → Installed Addons**, disable the problematic addons mentioned, and proceed with saving. Go back at a later time to re-enable the addons and save again.*
-
-11. Click "**Install**" and install the addon on **Stremio Web** (recommended, but you can also install on Stremio app if you want, but make sure you're signed in to your Stremio account wherever you install it).
-
-   ![Install Addon](../images/3.11.png)
-
-
->**NOTES FOR LATER:**
->* *If you use a Debrid service, and are in a country where you can't torrent, be careful to not open any links with the 🧲 icon. They should normally never appear if you have a Debrid configured, but just making sure you know.*
->* *If you see that you are getting results too slowly, try changing the fetching strategy. Go to **Addons**, scroll down to **Addon Fetching Strategy**. and select **Dynamic**. There should already be an exit condition pre-filled, which you can leave as is, and save the configuration. However, keep in mind that this might leave out relevant results, so try it yourself. On the other hand, if you feel you're not getting enough good results, do the opposite and select **Default** instead.*
->![Change Fetching](../images/3.12.1.png)
->* *If you prefer results for a language other than English, and you are not happy with the results you're getting, try disabling matching. Go to **Filters**, then **Matching**, and switch off the **Enable** toggle in all three sections (Title Matching, Year Matching, Season/Episode Matching).*
->![Disable Matching](../images/3.12.2.png)
->* ***AIOStreams** is a very powerful tool offering a lot of options. Although the template provided here for it should be more than enough for all kinds of normal usage, if you are interested in tinkering with it and customizing each detail, you can check out [**this**](https://docs.aiostreams.viren070.me/) guide directly from the developer, Viren, which is also very comprehensive and documents all configuration options for AIOStreams.*
+**<mark>MCUDISVN FOREVER!</mark>** 🛡️🍿
