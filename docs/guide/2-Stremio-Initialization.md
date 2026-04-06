@@ -40,7 +40,7 @@ Cài đặt app **<mark>Stremio</mark>** từ Store. Xem thêm tại trang [**St
   >   * Tải bằng app **<mark2>Downloader by AFTVnews</mark2>** với code **<mark2>259421</mark2>**
 
 ### 6. Các phần mềm/app thay thế khác
-Đi tới [🧿 Điện Thờ Hiền Triết](guide/7-Additional-Stuff.md)
+Đi tới [🧿 Điện Thờ Hiền Triết](https://bimbipsubteam.github.io/bimbip-stremio/guide/7-Additional-Stuff/)
 
 ## II. Thiết lập ban đầu cho Stremio:
 ### 1. **Đăng nhập vào Stremio Web hoặc phần mềm Stremio**
