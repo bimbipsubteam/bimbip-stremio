@@ -59,6 +59,7 @@ Sau khi phim đã chạy, nếu không có phụ đề tiếng Việt tự độ
 2. Tìm các nhãn có chữ:
     *   **`[Vie]`** hoặc **`[Tiếng Việt]`**: Phụ đề tiếng Việt có tag "vie" trong tên file.
     *   **`[V1E]`** hoặc **`[MCUDISVN]`**: Phụ đề tiếng Việt chưa có tag "vie" trong tên file.
+    *   Trong bản dành cho TV, nếu thấy một dòng trống trơn thì đó là phụ đề rời.
 3. **<mark2>Mẹo nhỏ:</mark2>** Bạn có thể cài đặt thêm addon phụ đề được giới thiệu trong [💎 5. Thần Chú Sung Túc](https://bimbipsubteam.github.io/bimbip-stremio/guide/5-Addon-Expanding/)
 4. **<mark>Với iPhone/iPad:</mark>** Bạn phải copy link phụ đề rời ở ô chọn luồng phát để tải về máy rồi thêm vào trình phát VLC hoặc Outplayer. Ngoài ra bạn cũng có thể tự tải phụ đề rời trên mạng.
 
