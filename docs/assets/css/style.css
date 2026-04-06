@@ -370,6 +370,7 @@ body.nav-open .sidebar {
 }
 
 body.nav-open .nav-backdrop {
+  display: block;
   backdrop-filter: blur(3px);
 }
 
