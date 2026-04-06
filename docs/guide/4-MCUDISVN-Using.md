@@ -51,7 +51,7 @@ Khi danh sách luồng phát hiện ra, mỗi "ô phim" sẽ chứa các thông 
 * Nếu thiết bị của bạn có phần cứng tốt, mạng nhanh, màn to, loa xịn thì cứ chọn bất cứ gì bạn thích.
 * Nếu xem trên màn hình nhỏ hoặc mạng yếu/chậm/cà giựt thì 1080p là đủ.
 * **<mark2>Lưu ý 1:</mark2>** Độ phân giải không tỷ lệ thuận với chất lượng hình ảnh. Bitrate mới là yếu tố then chốt quyết định chất lượng. Hiểu nôm na thì bitrate cao = video đẹp hơn = file nặng hơn. Vậy nên nếu gặp các file có cùng độ phân giải thì file có dung lượng cao hơn *thường* sẽ đẹp hơn.
-* **<mark2>Lưu ý 2:</mark2>** Còn nhiều thứ để nói về cái này nữa nhưng để ở đây thì dài dòng, mời bạn ghé qua [🧿 Điện Thờ Hiền Triết](guide/7-Additional-Stuff.md)
+* **<mark2>Lưu ý 2:</mark2>** Còn nhiều thứ để nói về cái này nữa nhưng để ở đây thì dài dòng, mời bạn ghé qua [🧿 Điện Thờ Hiền Triết](https://bimbipsubteam.github.io/bimbip-stremio/guide/7-Additional-Stuff/)
 
 ## IV. 💬 Chọn Phụ Đề
 Sau khi phim đã chạy, nếu không có phụ đề tiếng Việt tự động:
@@ -59,7 +59,7 @@ Sau khi phim đã chạy, nếu không có phụ đề tiếng Việt tự độ
 2. Tìm các nhãn có chữ:
     *   **`[Vie]`** hoặc **`[Tiếng Việt]`**: Phụ đề tiếng Việt có tag "vie" trong tên file.
     *   **`[V1E]`** hoặc **`[MCUDISVN]`**: Phụ đề tiếng Việt chưa có tag "vie" trong tên file.
-3. **<mark2>Mẹo nhỏ:</mark2>** Bạn có thể cài đặt thêm addon phụ đề được giới thiệu trong [💎 5. Thần Chú Sung Túc](guide/5-Addon-Expanding.md)
+3. **<mark2>Mẹo nhỏ:</mark2>** Bạn có thể cài đặt thêm addon phụ đề được giới thiệu trong [💎 5. Thần Chú Sung Túc](https://bimbipsubteam.github.io/bimbip-stremio/guide/5-Addon-Expanding/)
 
 **<mark>MCUDISVN FOREVER! 🛡️🍿</mark>**
 
