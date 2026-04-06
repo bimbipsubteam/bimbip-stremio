@@ -135,6 +135,8 @@ mark2 {
    LAYOUT CHÍNH
    ========================================= */
 .layout {
+  position: relative;
+  z-index: 10;
   margin-left: 0; /* Nội dung full màn hình do Sidebar ẩn mặc định */
   padding-top: var(--header-height);
   min-height: 100vh;
@@ -154,7 +156,7 @@ mark2 {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--header-height);
-  : 40;
+  z-index: 40;
   display: flex;
   justify-content: space-between;
   align-items: center;
