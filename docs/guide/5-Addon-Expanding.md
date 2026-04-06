@@ -7,4 +7,4 @@ title: "💎 5. Thần Chú Sung Túc"
 
 ## I. Addon tìm kiếm phụ đề
 ## II. Addon tạo danh mục phim
-### III. Addon sắp xếp
+## III. Thay đổi thứ tự Addon
