@@ -154,7 +154,7 @@ mark2 {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--header-height);
-  z-index: 40;
+  : 40;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -366,7 +366,7 @@ body.nav-open .sidebar {
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   border: 0;
-  z-index: 45;
+  z-index: 35;
 }
 
 body.nav-open .nav-backdrop {
