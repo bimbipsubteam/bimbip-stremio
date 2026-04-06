@@ -103,11 +103,39 @@
       {% endfor %}
     ];
     window.CURRENT_PATH = {{ page.path | jsonify }};
-    
+
+    document.addEventListener("DOMContentLoaded", function() {
+      /* =========================================
+         1. CHỨC NĂNG ẨN/HIỆN SIDEBAR (MENU TRÁI)
+         ========================================= */
+      const body = document.body;
+      const navToggle = document.getElementById("nav-toggle");
+      const navBackdrop = document.getElementById("nav-backdrop");
+
+      // Mở/Đóng Sidebar khi bấm vào nút ☰
+      if (navToggle) {
+        navToggle.addEventListener("click", function() {
+          body.classList.toggle("nav-open");
+        });
+      }
+
+      // ĐÓNG Sidebar khi bấm ra ngoài (bấm vào màn mờ)
+      if (navBackdrop) {
+        navBackdrop.addEventListener("click", function() {
+          body.classList.remove("nav-open");
+        });
+      }
+
+      // ĐÓNG Sidebar khi nhấn phím ESC trên bàn phím
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && body.classList.contains("nav-open")) {
+          body.classList.remove("nav-open");
+        }
+      });
         /* =========================================
        CHỨC NĂNG LIVE SEARCH (TÌM KIẾM NỘI BỘ)
        ========================================= */
-    document.addEventListener("DOMContentLoaded", function() {
+
       const searchInput = document.getElementById('search-input');
       const searchDropdown = document.getElementById('search-results'); // Thẻ cha (giữ border)
       const searchContent = document.querySelector('#search-results .search-content'); // Thẻ con (cuộn nội dung)
