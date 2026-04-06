@@ -54,7 +54,9 @@ Khi danh sách luồng phát hiện ra, mỗi "ô phim" sẽ chứa các thông 
 * **<mark2>Lưu ý 2:</mark2>** Còn nhiều thứ để nói về cái này nữa nhưng để ở đây thì dài dòng, mời bạn ghé qua [🧿 Điện Thờ Hiền Triết](https://bimbipsubteam.github.io/bimbip-stremio/guide/7-Additional-Stuff/)
 
 ## IV. 💬 Chọn Phụ Đề
-Sau khi phim đã chạy, nếu không có phụ đề tiếng Việt tự động:
+> Để Stremio tự động chọn phụ đề tiếng Việt: Vào phần **<mark2>Settings,</mark2>** tìm mục **<mark2>Default Subtitles Language</mark2>** và chọn **<mark2>Tiếng Việt.</mark2>**
+
+Sau khi phim đã chạy, nếu không có phụ đề tiếng Việt tự động, hãy thử:
 1. Nhấn vào biểu tượng **<mark2>Phụ đề (CC)</mark2>** trên trình phát Stremio.
 2. Tìm các nhãn có chữ:
     *   **`[Vie]`** hoặc **`[Tiếng Việt]`**: Phụ đề tiếng Việt có tag "vie" trong tên file.
