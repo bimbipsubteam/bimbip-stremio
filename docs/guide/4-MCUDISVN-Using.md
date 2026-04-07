@@ -28,6 +28,7 @@ Nếu bạn bấm vào một phim nào đó nhưng hiện dòng chữ **<mark2>N
 *   **<mark2>Gõ tên phim,</mark2>** sau đó lướt xuống tìm danh mục **<mark2>Google Drive Search</mark2>**
 *   **<mark2>Bấm See All</mark2>** và tìm file bạn cần. *Bấm vào từng file để hiện đầy đủ tên.*
 *   **<mark2>Mẹo nhỏ:</mark2>** Tên càng chi tiết thì tìm càng nhanh.
+*   **<mark2>Nếu vẫn không thấy:</mark2>** Vào [**Google Drive**](https://drive.google.com) để kiểm tra.
 
 ## II. 🎞️ Đọc thông số Luồng phát
 Khi danh sách luồng phát hiện ra, mỗi "ô phim" sẽ chứa các thông tin quan trọng. Hãy đọc kỹ trước khi nhấn Play:
