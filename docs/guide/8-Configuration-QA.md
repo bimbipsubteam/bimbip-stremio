@@ -12,7 +12,7 @@ Mình lập ra phần này dành cho bất kỳ ai có thắc mắc hoặc gặp
 
 ![Sign In](../images/2.1.png)
 
-## **Tôi gặp lỗi "No addons were requested for streams" khi mở phim trên Stremio?**
+## **Tôi gặp lỗi "No streams found" khi mở phim trên Stremio?**
 > Nếu bạn bấm vào một phim nào đó nhưng hiện dòng chữ **<mark2>No streams found</mark2>** thì có 2 nguyên nhân: **<mark2>Tên file không khớp với hệ thống lọc</mark2>** hoặc/và **<mark2>phim không có trong Drive.</mark2>** Khi đó hãy thử tìm bằng tên cụ thể trong danh mục Google Drive Search. Nếu vẫn không có thì kiểm tra xem trong Drive có file hay không.
 
 ## **Tôi mở phim nhưng cứ bị giật lag hoặc loading?**
