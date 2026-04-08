@@ -14,7 +14,7 @@ Chào mừng trở lại với ***<mark>Dòng Thời Gian Thiêng Liêng MCUDISV
 
 ### Cách A: Tìm kiếm qua thanh Search
 1. Gõ tên phim bạn muốn xem vào thanh tìm kiếm của Stremio (VD: *Avengers: Endgame*).
-2. Chọn phim từ kết quả của các danh mục. *Khi bạn cài đặt nhiều danh mục, tất cả đều sẽ hiện ra nếu tìm thấy phim, bạn chọn cái nào cũng được.*
+2. Chọn poster phim từ kết quả của các danh mục. *Khi bạn cài đặt nhiều danh mục, tất cả đều sẽ hiện ra nếu tìm thấy phim, bạn chọn cái nào cũng được.*
 4. Đợi vài giây để "cỗ máy" quét sạch Drive và hiện danh sách luồng phát của **<mark2>MCUDISVN</mark2>**. *Khi bạn cài đặt nhiều addon tạo luồng phát, hãy chọn cái có tên MCUDISVN.*
 
 ### Cách B: Duyệt qua "Danh mục phim" (Catalogs)
@@ -27,8 +27,11 @@ Nếu bạn chưa biết xem gì, hãy vào mục **<mark2>Discover</mark2>** (K
 Nếu bạn bấm vào một phim nào đó nhưng hiện dòng chữ **<mark2>No streams found</mark2>** thì có 2 nguyên nhân: **<mark2>Tên file không khớp với hệ thống lọc</mark2>** hoặc/và **<mark2>phim không có trong Drive.</mark2>** *Đây là lỗi thường gặp với Anime*, khi đó hãy thử các cách sau:
 *   **<mark2>Gõ tên phim,</mark2>** sau đó lướt xuống tìm danh mục **<mark2>Google Drive Search</mark2>**
 *   **<mark2>Bấm See All</mark2>** và tìm file bạn cần. *Bấm vào từng file để hiện đầy đủ tên.*
-*   **<mark2>Mẹo nhỏ:</mark2>** Tên càng chi tiết thì tìm càng nhanh.
-*   **<mark2>Nếu vẫn không thấy:</mark2>** Vào [**Google Drive**](https://drive.google.com) để kiểm tra.
+*   **<mark>Nếu vẫn không thấy:</mark>** Vào [**Google Drive**](https://drive.google.com) để kiểm tra.
+
+> **<mark>Lưu ý:</mark>**
+>* Tên càng chi tiết thì tìm càng nhanh.
+>* Lần tìm đầu tiên có thể bị lỗi không hiện file, hãy đợi một chút rồi quay lên ô tìm kiếm thêm 1 dấu cách sau từ khóa và tìm lại hoặc thay đổi từ khóa một chút. 
 
 ## II. 🎞️ Đọc thông số Luồng phát
 Khi danh sách luồng phát hiện ra, mỗi "ô phim" sẽ chứa các thông tin quan trọng. Hãy đọc kỹ trước khi nhấn Play:
