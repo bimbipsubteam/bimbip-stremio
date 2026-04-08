@@ -13,10 +13,10 @@ Mình lập ra phần này dành cho bất kỳ ai có thắc mắc hoặc gặp
 ![Sign In](../images/2.1.png)
 
 ## **Tôi gặp lỗi "No streams found" khi mở phim trên Stremio?**
-> Nếu bạn bấm vào một phim nào đó nhưng hiện dòng chữ **<mark2>No streams found</mark2>** thì có 2 nguyên nhân: **<mark2>Tên file không khớp với hệ thống lọc</mark2>** hoặc/và **<mark2>phim không có trong Drive.</mark2>** Khi đó hãy thử tìm bằng tên cụ thể trong danh mục Google Drive Search. Nếu vẫn không có thì kiểm tra xem trong Drive có file hay không.
+> Xem [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/4-MCUDISVN-Using/#c%C3%A1ch-c-t%C3%ACm-file-c%E1%BB%A5-th%E1%BB%83-trong-drive-kh%C3%B4ng-qua-poster)
 
 ## **Tôi mở phim nhưng cứ bị giật lag hoặc loading?**
->* Nếu dùng bản APK cài đặt cho TV, hãy thử cài lại phiên bản **<mark2>1.6.12,</mark2>** đây là bản ổn định nhất hiện tại.
+>* Nếu dùng bản APK cài đặt cho TV, hãy thử cài lại phiên bản **<mark2>1.6.12,</mark2>** ổn định nhất hiện tại. Xem [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/2-Stremio-Initialization/#5-tv-v%C3%A0-thi%E1%BA%BFt-b%E1%BB%8B-android-c%C3%A0i-t%E1%BB%AB-store-ho%E1%BA%B7c-apk) 
 >* Hiện tượng lag buổi tối đôi khi là do con cá cắn cáp.
 
 ## **Tôi mở phim nhưng không có tiếng?**
@@ -25,8 +25,7 @@ Mình lập ra phần này dành cho bất kỳ ai có thắc mắc hoặc gặp
 >* Thiết bị Android có thể cài đặt chọn mở phim với **<mark2>External Player</mark2>** là **<mark2>Just Player, VLC hoặc NPlayer</mark2>** nhưng khi đó bạn phải tải phụ đề rời về máy để sử dụng.
 
 ## **Tôi mở phim nhưng không thấy phụ đề tiếng Việt?**
->* Nhấn vào biểu tượng **Phụ đề (CC)** và tìm các nhãn có chữ **`[Vie]`**, **`[Tiếng Việt]`**, **`[V1E]`**, **`[MCUDISVN]`** hoặc đôi khi thấy một ô trống trơn thì đó là phụ đề rời.
->* **Với iPhone/iPad:**  Bạn phải copy link phụ đề rời ở ô chọn luồng phát để tải về máy rồi thêm vào trình phát VLC hoặc Outplayer. Ngoài ra bạn cũng có thể tự tải phụ đề rời trên mạng.
+> Xem [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/4-MCUDISVN-Using/#iv--ch%E1%BB%8Dn-ph%E1%BB%A5-%C4%91%E1%BB%81)
 
 ## **Tôi mở phim bằng iPad không được?**
 > Bạn phải chọn chế độ **“Yêu cầu trang web cho thiết bị di dộng”**
