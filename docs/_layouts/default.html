@@ -136,6 +136,15 @@
           body.classList.remove("nav-open");
         }
       });
+      
+      // Chọn tất cả link trừ link có class 'topbar-brand' (Logo)
+      const links = document.querySelectorAll('a:not(.topbar-brand)');
+      links.forEach(link => {
+        if (link.hostname !== window.location.hostname || link.getAttribute('href').includes('.html')) {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });  
         /* =========================================
        CHỨC NĂNG LIVE SEARCH (TÌM KIẾM NỘI BỘ)
        ========================================= */
