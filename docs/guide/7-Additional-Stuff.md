@@ -19,13 +19,14 @@ title: "🧿 Điện Thờ Hiền Triết"
 
 ### 3. iPhone/iPad/Apple TV: 
 >* [**Fusion Media Center**](https://apps.apple.com/vn/app/fusion-media-center/id6759285919?l=vi): Miễn phí - iOS/iPadOS/tvOS 26 (tốt)
->* [**Omni - Content Hub**](https://apps.apple.com/us/app/omni-content-hub/id6741470807): Có phí - iOS/iPadOS 17
->* [**Vidi · Media Center**](https://apps.apple.com/us/app/vidi-media-center/id6648776878): Có phí - iOS/iPadOS 17
 >* [**Chillio IPTV Smart Player Pro**](https://apps.apple.com/us/app/chillio-iptv-smart-player-pro/id6478813450): Miễn phí - iOS/iPadOS 16 (không có sub rời)
->* [**All The Media**](https://apps.apple.com/id/app/all-the-media/id6759011209): Miễn phí - iOS/iPadOS 18 (chưa test)
+>* [**Forward**](https://apps.apple.com/vn/app/forward/id6503940939?l=vi): Có phí - iOS/iPadOS 16 | tvOS 17 (xịn)
+>* [**Omni - Content Hub**](https://apps.apple.com/us/app/omni-content-hub/id6741470807): Có phí - iOS/iPadOS 17 | tvOS 18 (xịn, chưa test sub rời)
+>* [**Vidi · Media Center**](https://apps.apple.com/us/app/vidi-media-center/id6648776878): Có phí - iOS/iPadOS 17 (chưa test sub rời)
+>* [**All The Media**](https://apps.apple.com/id/app/all-the-media/id6759011209): Có phí - iOS/iPadOS 18 (chưa test sub rời)
 >* [**Nuvio**](https://nuvioapp.space/): Testflight (full) - Có file IPA
 
-### 4. Android:
+### 4. Android: Tất cả đều chưa test sub rời
 >* [**PlayTorrio**](https://playtorrio.xyz/)
 >* [**Nuvio**](https://nuvioapp.space/)
 >* [**STRMR**](https://www.strmr.net/)
