@@ -17,12 +17,13 @@ Mình lập ra phần này dành cho bất kỳ ai có thắc mắc hoặc gặp
 
 ## **Tôi mở phim nhưng cứ bị giật lag hoặc loading?**
 >* Nếu dùng bản APK cài đặt cho TV, hãy thử cài lại phiên bản **<mark2>1.6.12,</mark2>** ổn định nhất hiện tại. Xem [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/2-Stremio-Initialization/#5-tv-v%C3%A0-thi%E1%BA%BFt-b%E1%BB%8B-android-c%C3%A0i-t%E1%BB%AB-store-ho%E1%BA%B7c-apk) 
+>* Có thể thử vào phần Settings trong Stremio, **<mark2>tắt Hardware Accelerated, Frame Rate Matching, Tunneled Playback.</mark2>**
 >* Hiện tượng lag buổi tối đôi khi là do con cá cắn cáp.
 
 ## **Tôi mở phim nhưng không có tiếng?**
 >* Vào phần Settings trong Stremio, **<mark2>tắt Hardware Accelerated, Frame Rate Matching, Tunneled Playback.</mark2>**
 >* Trên TV có thể cần cài đặt thêm đầu ra âm thanh **<mark2>PCM.</mark2>**
->* Thiết bị Android có thể cài đặt chọn mở phim với **<mark2>External Player</mark2>** là **<mark2>Just Player, VLC hoặc NPlayer</mark2>** nhưng khi đó bạn phải tải phụ đề rời về máy để sử dụng.
+>* Một cách khác là cài đặt chọn mở phim với **<mark2>External Player</mark2>** là **<mark2>Just Player, VLC hoặc NPlayer</mark2>** nhưng khi đó bạn phải tải phụ đề rời về máy để sử dụng.
 
 ## **Tôi mở phim nhưng không thấy phụ đề tiếng Việt?**
 > Xem [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/4-MCUDISVN-Using/#iv--ch%E1%BB%8Dn-ph%E1%BB%A5-%C4%91%E1%BB%81)
@@ -32,6 +33,10 @@ Mình lập ra phần này dành cho bất kỳ ai có thắc mắc hoặc gặp
 
 ## **Tôi tìm phim nhưng hiển thị chậm?**
 > Khi bạn cài đặt nhiều addon tạo danh mục phim và tạo luồng phát, tốc độ sẽ bị giảm một chút. Hãy thử xóa bớt các addon ít dùng và **<mark2>đừng nóng vội.</mark2>**
+
+## **Tôi xem bằng TV Samsung và gặp lỗi "Stream failed to load" thì phải làm sao?**
+> Vào cài đặt mạng trong TV, chuyển DNS sang 8.8.8.8 hoặc 1.1.1.1.
+> Thử sử dụng Stremio bằng Media Station X theo hướng dẫn [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/2-Stremio-Initialization/#4-tv-samsunglg-kh%C3%B4ng-c%C3%B3-app-stremio)
 
 ## **Tôi không có gói trả phí RPDB. Tôi nên dùng key nào?**
 > Hãy dùng key miễn phí: `t0-free-rpdb`.
