@@ -34,9 +34,12 @@ Mình lập ra phần này dành cho bất kỳ ai có thắc mắc hoặc gặp
 ## **Tôi tìm phim nhưng hiển thị chậm?**
 > Khi bạn cài đặt nhiều addon tạo danh mục phim và tạo luồng phát, tốc độ sẽ bị giảm một chút. Hãy thử xóa bớt các addon ít dùng và **<mark2>đừng nóng vội.</mark2>**
 
-## **Tôi xem bằng TV Samsung và gặp lỗi "Stream failed to load" thì phải làm sao?**
-> Vào cài đặt mạng trong TV, chuyển DNS sang 8.8.8.8 hoặc 1.1.1.1.
-> Thử sử dụng Stremio bằng Media Station X theo hướng dẫn [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/2-Stremio-Initialization/#4-tv-samsunglg-kh%C3%B4ng-c%C3%B3-app-stremio)
+## **Tôi xem bằng TV Samsung và gặp lỗi "Stream failed to load"?**
+>* Vào cài đặt mạng trong TV, chuyển DNS sang 8.8.8.8
+>* Thử sử dụng Stremio bằng Media Station X theo hướng dẫn [**ở đây**](https://bimbipsubteam.github.io/bimbip-stremio/guide/2-Stremio-Initialization/#4-tv-samsunglg-kh%C3%B4ng-c%C3%B3-app-stremio)
+
+## **Tôi xem bằng TV Samsung và không thấy addon dù đã đăng nhập đúng tài khoản và bấm Sync Addons?**
+> Đây là lỗi hiển thị của Stremio trên TV Samsung. Bạn cứ chọn phim xem như bình thường. 
 
 ## **Tôi không có gói trả phí RPDB. Tôi nên dùng key nào?**
 > Hãy dùng key miễn phí: `t0-free-rpdb`.
